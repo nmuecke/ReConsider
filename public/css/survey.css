@@ -1,0 +1,17 @@
+
+#survey dt {
+   font-size: 1.3em;
+   padding-top: 0.4em;
+   }
+
+#survey dd {
+   font-size: 1.1em;
+   padding-top: 0.4em;
+   padding-bottom: 1.2em;
+   }
+
+#survey dd  {
+   text-align: center;
+   margin-right: auto;
+   margin-left: auto;
+   }

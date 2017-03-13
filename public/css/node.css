@@ -1,0 +1,266 @@
+
+.node {
+   margin-right: 2.5%;
+   font-family: sans-serif;
+   }
+
+.node-subNode {
+   max-width: 66em;
+   min-width: 36em;
+
+   padding:        0em;
+   padding-bottom: 0em;
+
+   margin:        0em;
+   margin-left:   1.6em;
+   padding-right: 0;
+   margin-right:  0;
+
+   }
+
+#view-content {
+   padding-top: 2em;
+   }
+
+.node-list {
+   margin-bottom: 0.6em;
+   margin-top:    0.9em;
+   padding-left:   1.6em;
+   }
+
+.node-title-AGREED, 
+.node-title-DISAGREED, 
+.node-title-DISPUTED,
+.node-title-ASSERTED,
+.node-title-POTENTUAL_AGREED,
+.node-title-PENDING_REVIEW,
+.node-title-PENDING_OUTCOME,
+.node-title- {
+   font-weight: bold;
+   font-size: 1.2em;
+   background-color: #C0C4DB;
+   color: #0F0F0E;
+   padding:        0em;
+   margin:         0em;
+   margin-top:     0.1em;
+   padding-left:   0.7em;
+   padding-top:    0.1em;
+   padding-bottom: 0.06em;
+
+   border-radius: 2px;
+   -moz-border-radius: 2px;
+   -webkit-border-radius: 2px;
+
+   box-shadow:         0px 0px 9px 2px #C0C4DB;
+   -webkit-box-shadow: 0px 0px 9px 2px #C0C4DB;
+   -moz-box-shadow:    0px 0px 9px 2px #C0C4DB;
+
+   }
+
+.node-title-ASSERTED {
+   background-color: #B8D5FF;
+   box-shadow:         0px 0px 9px 2px #B8D5FF;
+   -webkit-box-shadow: 0px 0px 9px 2px #B8D5FF;
+   -moz-box-shadow:    0px 0px 9px 2px #B8D5FF;
+   }
+
+
+.node-title-POTENTUAL_AGREED,
+.node-title-AGREED { 
+   background-color: #86DF85;
+   box-shadow:         0px 0px 9px 2px #86DF85;
+   -webkit-box-shadow: 0px 0px 9px 2px #86DF85;
+   -moz-box-shadow:    0px 0px 9px 2px #86DF85;
+   }
+
+.node-title-DISPUTED {
+   background-color: #FF7E7E;
+   box-shadow:         0px 0px 9px 2px #FF7E7E;
+   -webkit-box-shadow: 0px 0px 9px 2px #FF7E7E;
+   -moz-box-shadow:    0px 0px 9px 2px #FF7E7E;
+   }
+
+.node-title-PENDING_OUTCOME,
+.node-title-DISAGREED { 
+   background-color: #FFEE80;
+   box-shadow:         0px 0px 9px 2px #FFEE80;
+   -webkit-box-shadow: 0px 0px 9px 2px #FFEE80;
+   -moz-box-shadow:    0px 0px 9px 2px #FFEE80;
+   }
+
+.node-title-PENDING_REVIEW {
+   background-color: #3E399C;
+   color: #FEC92B;
+   background-color: #FEC92B;
+   color: #3E399C;
+   box-shadow:         0px 0px 9px 2px #3E399C;
+   -webkit-box-shadow: 0px 0px 9px 2px #3E399C;
+   -moz-box-shadow:    0px 0px 9px 2px #3E399C;
+   }
+
+.node-sub-title {
+   padding:0;
+   margin:0;
+   margin-top: .6em;
+   margin-bottom: .2em;
+   border-bottom: 1px dotted #0D7495;
+   color: #0D7495;
+
+   font-family: sans-serif;
+   color: #074559;
+   color: #053544;
+   color: #00559B;
+
+   border-bottom: 1px solid #053544;
+   border-bottom: 1px solid #00559B;
+   }
+
+.node-prefix,
+.node-suffix,
+.node-claims,
+.node-activeClaim,
+.node-relevance,
+.node-moreinfo,
+.node-infered,
+.node-status
+  {
+  margin-top: .3em; 
+  margin-bottom: .4em; 
+  padding-left: .6em;
+  clear:both;
+  text-indent: none;
+  }
+
+.node-body-AGREED,
+.node-body-DISAGREED,
+.node-body-DISPUTED,
+.node-body-ASSERTED,
+.node-body-POTENTUAL_AGREED,
+.node-body-PENDING_REVIEW,
+.node-body-PENDING_OUTCOME,
+.node-body- {
+  margin-top:0em;
+  padding-top:    0.4em;
+  margin-left:    0.7em;
+  margin-right:   0.7em;
+  padding-left:   0.5em;
+  padding-right:  0.5em;
+  padding-bottom: 0.6em;
+  margin-bottom: 0.6em;
+
+  font-size: .9em;
+
+   box-shadow:         0px 2px 8px 1px #222222;
+   -webkit-box-shadow: 0px 2px 8px 1px #222222;
+   -moz-box-shadow:    0px 2px 8px 1px #222222;
+
+   -webkit-border-bottom-right-radius: 4px;
+   -webkit-border-bottom-left-radius: 4px;
+   -moz-border-radius-bottomright: 4px;
+   -moz-border-radius-bottomleft: 4px;
+   border-bottom-right-radius: 4px;
+   border-bottom-left-radius: 4px;
+   }
+.node-body-AGREED,
+.node-body-POTENTUAL_AGREED {
+   box-shadow:         0px 2px 8px 1px #86DF85;
+   -webkit-box-shadow: 0px 2px 8px 1px #86DF85;
+   -moz-box-shadow:    0px 2px 8px 1px #86DF85;
+   }
+
+.node-body-PENDING_OUTCOME,
+.node-body-DISAGREED {
+   box-shadow:         0px 2px 8px 1px #FFEE80;
+   -webkit-box-shadow: 0px 2px 8px 1px #FFEE80;
+   -moz-box-shadow:    0px 2px 8px 1px #FFEE80;
+   }
+
+.node-body-DISPUTED {
+   box-shadow:         0px 2px 8px 1px #FF7E7E;
+   -webkit-box-shadow: 0px 2px 8px 1px #FF7E7E;
+   -moz-box-shadow:    0px 2px 8px 1px #FF7E7E;
+   }
+
+.node-body-ASSERTED{
+   box-shadow:         0px 2px 8px 1px #B8D5FF;
+   -webkit-box-shadow: 0px 2px 8px 1px #B8D5FF;
+   -moz-box-shadow:    0px 2px 8px 1px #B8D5FF;
+   }
+
+.node-body-PENDING_REVIEW {
+   box-shadow:         0px 2px 8px 1px #3E399C;
+   -webkit-box-shadow: 0px 2px 8px 1px #3E399C;
+   -moz-box-shadow:    0px 2px 8px 1px #3E399C;
+   }
+
+.node-infered {
+   margin-top: 1em;
+   width: 100%;
+   text-align: center;
+   font-weight: bold;
+   }
+.node-inference {
+   font-style: italic;
+   color: #3E399C;
+   }
+
+.node-question {
+  vertical-align: middle;
+  }
+   
+
+.node-prefix,
+.node-claims,
+.node-suffix
+  {
+  display:inline;
+  }
+
+.node-body .node-prefix,
+.node-body .node-claims,
+.node-body .node-suffix
+  {
+  font-size: 1.1em;
+  }
+.node-list 
+  {
+  padding-bottom: 0.6em;
+  }
+
+.node-list .node.title,
+.node-list .node-prefix,
+.node-list .node-suffix,
+.node-list .node-claims,
+.node-list .node-activeClaim,
+.node-list .node-relevance,
+.node-list .node-moreinfo,
+.node-list .node-status,
+.node-claimSummary
+  {
+  display:inline;
+  }
+
+.node-activeClaim,
+.node-claimSummary
+  {
+  font-style: italic;
+  color: #0D7495;
+  }
+
+/* buttons */
+.node .a-button {
+   float: right;
+   padding: .125em;
+   padding-right: .25em;
+   padding-left: .25em;
+   margin-top: -0.3em; 
+   }
+
+.node-submit {
+   float: right;
+   }
+
+.node-anchor {
+   position: relative;
+   top: -70px;
+   }

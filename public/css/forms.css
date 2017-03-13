@@ -1,0 +1,20 @@
+#TermsOfUse li, #TermsOfUse ul, #acceptTerms-element, #acceptTerms-label{
+   display: inline;
+   list-style-type: none;
+   }
+
+#TermsOfUse .zend_form {
+   padding-right: auto;
+   padding-left: auto;
+   }
+#TermsOfUse .errors {
+   color: red;
+   list-style-position:inside;
+   display: none;
+   }  
+
+
+#procced-element, #procced-label {
+   padding-left: auto;
+   padding-right: auto;
+   }

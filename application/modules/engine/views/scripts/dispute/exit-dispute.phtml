@@ -1,0 +1,43 @@
+<?php $this->headTitle(': Potentual-Agreemnt'); ?>
+<?php $this->headLink()->appendStylesheet('/css/general.css') ?>
+<?php
+$disuptesURL = $this->url( array( 'controller'=> 'Disputes',
+                                  'action'    => 'Index' ),
+                                  'default',
+                                   true );
+
+$logoutURL   = $this->url( array( 'controller'=> 'Auth',
+                                  'action'    => 'logout' ),
+                                  'default',
+                                   true );
+
+$disupteURL  = $this->url( array( 'controller'=> 'Dispute',
+                                  'action'    => 'Index',
+                                  'module'    => 'engine' ),
+                                  'default',
+                                   true );
+
+//Zend_Debug::Dump( $this->outcomeState );
+?>
+
+<div id="view-content">
+
+<?php
+
+?>
+ <h2 id='title'> Exit the dispute </h2>
+   <div id='page-content'>
+      <p>
+      <h4>What Next?</h4>
+      You must now wait for the other party in the dispute to consider the changes you have made and respond 
+      to them. Once they made their changes the system will send you an email to inform you of the changes
+      unless you log in and check the dispute first.
+      </p>
+      <p>
+      If you are finished for now you should <a href='<?php echo $logoutURL; ?>'>Log out</a>, otherwise you may 
+      return to the <a href='<?php echo $disuptesURL; ?>'>ODR study</a> if you wish to make any additional changes
+      to your dispute.
+      </p>
+   </div>
+</div>
+

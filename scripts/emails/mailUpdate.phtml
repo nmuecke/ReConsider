@@ -1,0 +1,39 @@
+<body>
+
+<h4>To Admin,</h4>
+
+<p>
+Mail has been sent to inforem users of changes to their disputes.
+</p>
+<p>
+Total messages sent: <?php $this->messages_sent; ?>
+</p>
+<?php if( isset( $this->error ) )
+   {
+   echo "<p>";
+   Zend_Debug::Dump( $this->error );
+   echo "</p>";
+   }
+?>
+<p>
+<table>
+<?php if( count( $this->list ) > 0 ): ?>
+   <tr>
+   <?php foreach( $this->list[0] as $th=>$item ): ?>
+      <th><?php echo $th; ?></th> 
+   <?php endforeach; ?>
+   </tr>
+   <?php foreach( $this->list as $item ): ?>
+      <tr>
+      <?php foreach($item as $ii ): ?>
+      <td><?php echo $ii; ?></td>    
+      <?php endforeach; ?>
+      </tr> 
+   <?php endforeach; ?>
+<?php endif; ?>
+</table>
+</p>
+<p>
+End of message.
+</p>
+</body>

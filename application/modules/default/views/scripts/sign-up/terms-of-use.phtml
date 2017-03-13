@@ -1,0 +1,28 @@
+
+<?php $this->headLink()->appendStylesheet('/css/general.css'); ?>
+<?php $this->headLink()->appendStylesheet('/css/forms.css'); ?>
+<?php $this->headTitle( ": Terms of user" ); ?>
+
+<div id="view-content">
+   <div id="TermsOfUse-dialog">
+      <h2 id='title'>Terms of use</h2>
+      <div id='page-content'>
+         <div id='terms' >
+            <p>
+            these are some terms of use, blar blar blar.
+            </p>
+            <p>
+            here are some more, blar blar blar.
+            </p>
+         </div>
+         <?php if( isset($this->form ) )
+                  {
+                  $this->form->setLabelMessage( "I have read and understood the terms of use." );
+                  $this->form->setAction($this->url());
+                  echo $this->form;
+                  }
+              ?>
+
+      </div>
+   </div>
+</div>

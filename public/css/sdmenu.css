@@ -1,0 +1,87 @@
+div.sdmenu {
+   margin-top: 10px;
+   width: 116px;
+   font-family: Arial, sans-serif;
+   font-size: 0.75em;
+/*
+   padding-bottom: 10px;
+   background: url(/images/sdmenu/bottom.gif) no-repeat  right bottom;
+*/
+   background-color: #B8D5FF;
+   background-color: #D4D4E7;
+   background-color: #C0C4DB;
+   color: #000000;
+   }
+
+
+div.sdmenu div {
+/*
+   background: url(/images/sdmenu/title.gif) repeat-x;
+*/
+   color: #000000;
+   overflow: hidden;
+   }
+
+div.sdmenu div:first-child {
+/*
+   background: url(/images/sdmenu/toptitle.gif) no-repeat;
+*/
+   }
+div.sdmenu div.collapsed {
+   height: 3em;
+   border-bottom: 1px solid #EEEEEE;   
+   }
+
+div.sdmenu div p {
+   margin: 0px;
+   padding: 0px;
+   max-height: 12em;
+   overflow-y:auto;
+   overflow-x: hidden;
+   }
+
+div.sdmenu div span {
+   display: block;
+   padding: 5px 25px;
+   font-weight: bold;
+   color: #0F0F0E;
+
+   background: url(/images/sdmenu/expanded-b.gif) no-repeat 10px center;
+   cursor: default;
+   border-bottom: 1px solid #ddd;
+   }
+
+div.sdmenu div.collapsed span {
+   background-image: url(/images/sdmenu/collapsed-b.gif);
+   }
+
+
+div.sdmenu div p a {
+   padding: 5px 10px;
+   background: #EEEEEE;
+   display: block;
+   border-bottom: 1px solid #DDDDDD;
+   color: #0B6784;
+   text-decoration: none;
+   }
+
+div.sdmenu div p a.current {
+   }
+
+div.sdmenu div p a:hover {
+/*
+   background : #066 url(/images/sdmenu/linkarrow.gif) no-repeat right center;
+*/
+   background: #CCCCCC;
+   text-decoration: none;
+   }
+
+h3.title {
+   background-color: #0D7495;
+   color: #FFFFFF;
+   text-align: center;
+   padding-top: 0.1em;
+   padding-bottom: 0.1em;
+   margin: auto;
+   margin-bottom: 2px;
+   }

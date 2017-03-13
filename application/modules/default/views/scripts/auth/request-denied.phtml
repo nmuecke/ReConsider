@@ -1,0 +1,17 @@
+<?php $this->headTitle(': Request Denied'); ?>
+<?php $this->headLink()->appendStylesheet('/css/general.css') ?>
+
+<?php $login_href =  $this->url( array('controller'=>'auth' ),'default', true ) ?>
+
+<div id="view-content">
+   <h2 id='title'>Request Denied</h2>
+   <div id='page-content'>
+   The page you requested requires that you be logged in.
+   <br /> 
+   <br /> 
+   You can access the log in page from  <a href="<?php echo $login_href; ?>">here</a> or 
+   by using the link in the top right corner of the page. If you are already logged in,
+   then it is likely that you have insufficient privileges to view the requested page.
+   </div>
+</div>
+

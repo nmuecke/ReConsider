@@ -1,0 +1,91 @@
+<?php $this->headTitle(': Potentual-Agreemnt'); ?>
+<?php $this->headLink()->appendStylesheet('/css/general.css') ?>
+<?php
+$disuptesURL = $this->url( array( 'controller'=> 'Disputes',
+                                  'action'    => 'Index' ),
+                                  'default',
+                                   true );
+
+$disupteURL  = $this->url( array( 'controller'=> 'Dispute',
+                                  'action'    => 'Index',
+                                  'module'    => 'engine' ),
+                                  'default',
+                                   true );
+
+//Zend_Debug::Dump( $this->outcomeState );
+?>
+
+<div id="view-content">
+
+<?php
+
+?>
+ <h2 id='title'> Dispute State: </h2>
+   <div id='page-content'>
+   <?php if( $this->outcomeState == "ACCEPTED" ): ?>
+      <p>
+      You have accepted the preposed outcome to the dispute. 
+      </p>
+      <p>
+      <h4>What Next?</h4>
+      You must now wait for the other party in the dispute to consider the preposed outcome. If they also 
+      accept the preposed outcome to the dispute, then the dispute will be considred resolved. However, if 
+      the reject the preposed outcome to the dispute you will both be required to re-enter the dispute and 
+      review some of the claims you have asserted.
+      </p>
+      <p>
+      In either event you will receve an email to informe you of the result, once the other party has made
+      their decision.
+      </p>
+      <p>
+      Return to <a href='<?php echo $disuptesURL; ?>'>Disputes page</a>
+      </p>
+   <?php elseif( $this->outcomeState == "REJECTED" ): ?>
+      <p>
+      You have rejected the preposed outcome to the dispute. 
+      </p>
+      <p>
+      <h4>What Next?</h4>
+      By rejecting the preposed outcome to the dispute you and the other party in the dispute, will both be
+      required to re-enter the dispute and review some of the claims you have asserted.
+      </p>
+      <p>
+      An email will be sent to informe you and the other party of the result.
+      </p>
+      <p>
+      Return to the <a href='<?php echo $disupteURL; ?>'>Dispute</a>
+      </p>
+
+   <?php elseif( $this->outcomeState == "RESOLVED" ): ?>
+      <p>
+      You have elected to accept the preposed outcome to the dispute as has the other party.
+      </p>
+      <p>
+      <h4>What Next?</h4> 
+      This signels the end of the dispute. No furthor acctions need to be taken. <h4>TODO:</h4> is there a survey to complet?? must check 
+      </p>
+      <p>
+      Thank you for participating in this study.
+      </p>
+      <p>
+      Return to <a href='<?php echo $disuptesURL; ?>'>Disputes page</a>
+      </p>
+   <?php else: ?>
+      <p>
+      Oops! something no quite right here.
+      </p>
+      <p>
+      <h4>What Next?</h4>
+      You have probably entred this page from an incorect location. However, it is posible that something 
+      may have gone wrong. Please try clicking on the link bellow, an re-enter the dispue. If you are  
+      returned to this message, please send an email to the <a href='mailto:<?php echo Zend_Registry::get( 'contacts' )->sysEmail; 
+                                                               ?>?Subject=Resolving%20dispute%20error'>system admin</a>,
+      providing details of how you ended up here. Thank you.
+      </p>
+      <p>
+      Return to <a href='<?php echo $disuptesURL; ?>'>Disputes page</a>
+      </p>
+
+   <?php endif; ?>
+   </div>
+</div>

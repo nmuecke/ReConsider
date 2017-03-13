@@ -1,0 +1,10 @@
+<?php $this->headLink()->appendStylesheet('/css/general.css') ?>
+<?php $this->headLink()->appendStylesheet( '/css/admin.css' ); ?>
+<?php $this->headTitle(': Survey Results'); ?>
+<?php $this->addHelperPath('Extend/Struct/View/Helper', 'Extend_Struct_View_Helper'); ?>
+<?php $this->layout()->disableLayout(); ?>
+<div id="view-content">
+   <div id="page-content">
+   <?php echo $this->HtmlTable( $this->data ); ?>
+   </div>
+</div>

@@ -1,0 +1,71 @@
+
+#page-content {
+   width: 100%;
+   }
+
+#page-content p.disputeID,
+#page-content p.type,
+#page-content p.status,
+#page-content p.userID,
+#page-content p.role,
+#page-content p.group,
+#page-content p.numRejects,
+#page-content p.gender {
+   float: left;
+   padding: 0em;
+   margin:  0.1em;
+   }
+
+#page-content p.view {
+   float: right;
+   padding: 0em;
+   margin:  0.1em;
+   }
+
+#page-content dt, 
+#page-content dd {
+   clear:both;
+   padding: 0em;
+   }
+
+#page-content dd {
+   margin-left: 2em;
+   }
+
+#page-content p.disputeID {
+   margin-top:  0.5em;
+   width: 10em;
+   }
+
+#page-content p.type {
+   margin-top:  0.5em;
+   width: 10em;
+   }
+
+#page-content p.status {
+   margin-top:  0.5em;
+   width: 11em;
+   }
+
+#page-content p.numRejects {
+   margin-top:  0.5em;
+   width: 23em;
+   }
+
+
+#page-content p.userID {
+   width: 10em;
+   }
+
+#page-content p.role {
+   width: 6em;
+   }
+
+#page-content p.group {
+   width: 10em;
+   }
+
+#page-content p.gender {
+   width: 7em;
+   }
+

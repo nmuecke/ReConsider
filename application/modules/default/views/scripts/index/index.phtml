@@ -1,0 +1,37 @@
+<?php $this->headLink()->appendStylesheet('/css/general.css') ?>
+<?php $this->headTitle(': Home'); ?>
+
+<div id="view-content">
+   <h2 id='title'>Welcome to ReConsider</h2>
+   <div id="page-content">
+      <p>
+      The ReConsider system is an Online Dispute Resolution (ODR) system.
+      Currently the system is in a testing phase and therefore should not be
+      considered for the resolution of disputes outside academic studies.
+      </p>
+      <h3 class='sub-title'>Current Study: UB/Deakin EHR</h3>
+      <p>
+      Currently the ReConsider system is being used in a study, investigating
+      the role which Emotional Intelligence (EI) plays in online disputes relating
+      to electronic health record.. This study is being jointly conducted by the
+      Deakin University and University of Ballarat.
+      </p>
+      <p>
+      If you would like more information about this study or about the ReConsider
+      system, please email: <?php echo Zend_Registry::get( 'contacts' )->researchContact; ?>
+      </p>
+
+      <h3 class='sub-title'>Participate in the study</h3>
+      <p>If you have not registered with the ReConsider system please
+         <a href="<?php echo $this->url( array('controller'=>'auth', 
+                                               'action' => 'create-account' ),
+                                        'default',
+                                         true ) ?>">create an account</a> here.
+      </p>
+      <p>Returning user can
+         <a href="<?php echo $this->url( array('controller'=>'auth' ),
+                                               'default',
+                                                true ) ?>">log in</a> here.
+     </p>
+   </div>
+</div>

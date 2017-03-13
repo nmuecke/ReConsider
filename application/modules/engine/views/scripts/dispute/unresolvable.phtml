@@ -1,0 +1,19 @@
+<?php $this->headTitle(': Unresolvable Dispute'); ?>
+<?php $this->headLink()->appendStylesheet('/css/general.css') ?>
+
+
+<div id="view-content">
+
+ <h2 id='title'>Unable to resolve the dispute </h2>
+   <div id='page-content'>
+    <p>
+    You have made a number of attempts to find a resolution to this dispute.
+    If you believe that it is not possible to reach an agreement with the 
+    other party then you may declare the dispute <i>unresolvable</i>. Doing
+    so will end this dispute.
+    </p>
+    <p>
+      <?php echo $this->form->setAction($this->url()); ?>
+    </p>
+   </div>
+</div>

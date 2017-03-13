@@ -1,0 +1,141 @@
+<?php $this->headLink()->appendStylesheet('/css/general.css'); ?>
+<?php $this->headLink()->appendStylesheet('/css/forms.css'); ?>
+<?php $this->headTitle( ": Plain Language Statement" ); ?>
+
+<?php $RevocationOfConsent_href =  $this->url( array('controller'=>'Revocation-Of-Consent', 'action' => 'index' ),'default', true ) ?>
+
+
+<div id="view-content">
+      <div id='page-content'>
+<h2 id='title'>PLAIN LANGUAGE STATEMENT AND CONSENT FORM</h2>
+
+
+<h3>TO Participant: </h3>
+
+<h4>Plain Language Statement</h4>
+<p>
+<b>Date:</b> 22nd June, 2011
+</p>
+<b>Full Project Title:</b> Assessing the suitability of a new Online Dispute Resolution 
+architecture for the settlement of Electronic Health Record disputes; an emotional 
+intelligence and organisational security approach.
+</p>
+<p>
+<b>Principal Researcher:</b> Associate Professor Andrew Stranieri (University of Ballarat), 
+                              Dr. Emilia Bellucci (Deakin University), 
+                              Dr Sita Venkatraman (University of Ballarat), 
+                              Associate Professor Jemal Abawajy (Deakin University).
+</p>
+<p>
+<b>Associate Researcher:</b> Dr. Nial Muecke
+</p>	
+<div class='indent'>
+<p>
+The purpose of this project is to assess how we can effectively resolve disputes in the 
+management of Electronic Health Records (EHR).  This is important research as Australia 
+edges closer to the development of a fully integrated EHR system.  
+</p>	
+<p>
+Some studies have found that the success of a negotiation is dependent upon one’s Emotional 
+Intelligence (EI).  EI is defined as the ability to recognise and manage one’s own emotions 
+and that of other people.  In this study we will be looking at whether the success of an 
+online negotiation is related to how people recognise and manage emotions, and in particular, 
+their Emotional Intelligence score. 
+</p>	
+<p>
+You will be asked to complete two online activities.  The first relates to an online EI test.  
+It is expected the test will take approximately 40 minutes to complete, and will be in the 
+form of multiple choice questions.  Next you will be given a case study, and asked to use 
+ReConsider, an Online Dispute Resolution system to resolve the dispute.  The case study will 
+be a dispute in Electronic Health Records, where you will be acting on behalf of the patient 
+or medical practitioner.  It is expected the case study will take approximately 35 minutes to 
+complete.  You can start the case study at any time after you have completed the EI test. 
+</p>	
+<p>
+Once you have completed the session through Re-Consider, the results from your  EI test and 
+session in ReConsider will be sent out via email.  You will also be advised of a website 
+where you can find more information about the project.  A Deakin/University of Ballarat 
+website will be set up to list the results of the project, links to associated research 
+publications and additional information about our project.
+</p>	
+<p>
+Risks include distress some participants may experience on discovering their EI score.  The 
+likelihood of this is expected to be quite low.  If you are currently seeing a mental health 
+professional, please seek their advice before agreeing to participate.  If you are concerned, 
+please contact us to discuss more fully.
+</p>	
+<p>
+Expected benefits to the wider community include improvement to the online dispute resolution 
+process, particularly in the management of Electronic Health Records. 
+</p>	
+<p>
+You are asked to participate on a purely voluntary basis.  You will be asked to enter your 
+email address to enable you to use the online dispute resolution software (ReConsider) and to 
+register for the project and (if necessary) to withdraw your participation.  <b>Your email 
+address will not be used for any other purpose.</b>  Your email address will be assigned a 
+unique identifier that will be used to identify you for the purposes of the research study.  
+Your privacy and confidentiality will be protected by storing your email address and associated 
+unique identifier securely on the university server.  We (Emilia and Andrew) will ensure your 
+email address will be deleted at the end of the data collection phase. 
+</p>	
+<p>
+The research will be monitored by the Principal Researchers.  At the end of the 2011, we will 
+provide a report to Deakin University and The University of Ballarat on the outcome of our research. 
+</p>	
+<p>
+Sources of funding for the research is from the Deakin University and the University of Ballarat 
+Collaboration Fund 2011.  Total amount: $32,500.  
+</p>	
+<p>
+You have every right to withdraw from further participation at any stage.  To withdraw, you will 
+need fill in the online <a href='<?php echo $RevocationOfConsent_href; ?>'>Revocation of Consent form</a>.  
+</div>
+</p>
+<h2>Contact details of the researchers:</h2>
+
+<?php echo $this->Contact( "Dr. Emilla Bellucci",
+                            array( "E-Mail:" => "emilla.bellucci@deakin.edu.au" ),
+                            array( "Office phone number:" => "9244 6273" ),
+                            array( "Address:"  => "Office LB 4.310.",
+                                   "_Address1" => "Burwood Campus, Deakin Unversity.",
+                                   "_Address2" => "221 Burwood Highway, Burwood,",
+                                   "_Address3" => "Victoria, 3125" ) 
+                          );
+      echo $this->Contact( "Assoc Prof Andrew Stranieri.",
+                            array( "E-Mail:" => "a.stranieri@ballarat.edu.au" ),
+                            array( "Office phone number:" => "5327 9283" ),
+                            array( "Address:"  => "Office N3/3.",
+                                   "_Address1" => "Mt. Helen’s Campus.",
+                                   "_Address2" => "University of Ballarat.",
+                                   "_Address3" => "PO Box: 663, Ballarat,",
+                                   "_Address4" => "Victoria, 3352" ) 
+                          );
+?>
+
+<h2>Complaints</h2>
+<p>
+If you have any complaints about any aspect of the project, the way it is being conducted or any 
+questions about your rights as a research participant, then you may contact:  
+<?php echo $this->Contact( "The Manager, Office of Research Integrity",
+                            array( "E-Mail:" => "research-ethics@deakin.edu.au" ),
+                            array( "Telephone:" => "9251 7129",
+                                   "Fax:"       => "9244 6581" ),
+                            array( "Address:"  => "Office of Research Integrity",
+                                   "_Address1" => "Burwood Campus, Deakin Unversity.",
+                                   "_Address2" => "221 Burwood Highway, Burwood,",
+                                   "_Address3" => "Victoria, 3125" ),
+                            array( "<i>Please quote project number BL-EC 41-11.</i>"=>"" )
+                          );
+?>
+</p>
+      <div class='center'>    
+         <?php if( isset($this->form ) )
+                  {
+                  $this->form->setLabelMessage( "I have read and understood the plain language statemnt." );
+                  $this->form->setAction($this->url());
+                  echo $this->form;
+                  }
+              ?>
+      </div>
+   </div>
+</div>

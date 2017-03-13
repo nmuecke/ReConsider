@@ -1,0 +1,46 @@
+
+<?php $this->headLink()->appendStylesheet('/css/general.css'); ?>
+<?php $this->headLink()->appendStylesheet('/css/forms.css'); ?>
+<?php $this->headLink()->appendStylesheet( '/css/admin.css' ); ?>
+<?php $this->headTitle( ": EI Test Setup" ); ?>
+
+<div id="view-content">
+   <div id='page-content'>
+   <h2 id='title'>EI Test Setup</h2>
+   <?php
+   $this->form->setAction($this->url());
+   echo $this->form;
+   ?>
+   <form action='<?php echo $this->url(); ?>' name='updateEIForm' method='post' > 
+   <input type='hidden' name='updateEI' value='true'>
+   <table id='admin-table'>
+      <tr class='top-tr'>
+         <th></th>
+         <th>ID</th>
+         <th>Test ID</th>
+         <th>Password</th>
+         <th>Active</th>
+      </tr>
+      <?php foreach( $this->eidata as $ei ): ?>
+      <?php $active =  $ei->getActive() ? 'Deactivate' : 'Activate';?>
+      <tr class='data-tr'>
+         <td><button type  = 'submit' 
+                     name  = 'remove' 
+                     value = '<?php echo $ei->getID(); ?>'>Del</button>
+         </td>
+         <td><?php echo $ei->getId();?></td>
+         <td><?php echo $ei->getEIID();?></td>
+         <td><?php echo $ei->getPassword();?></td>
+         <td><button type  = 'submit' 
+                     name  = '<?php echo $active; ?>' 
+                     value = '<?php echo $ei->getID(); ?>'><?php echo $active; ?></button>
+         </td>
+      </tr>
+   
+     
+      <?php endforeach; ?>
+   </table>
+   </form>
+   </div>
+</div>
+

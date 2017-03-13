@@ -1,0 +1,30 @@
+<?php $this->headLink()->appendStylesheet('/css/general.css') ?>
+<?php $this->headTitle( ': Dispute' ); ?>
+<?php $topLink = "<a class='a-button' href='" . $this->url() ."/#top' >up</a>"; ?>
+<div id="view-content">
+   <h2 id='title'>Help: Dispute</h2>
+   <div id='page-content'>
+   <h4 class='sub-title'><a name='top'></a>Page Content:</h4>
+   <dl>
+      <dt><a href='<?php echo $this->url(); ?>/#begining_a_dispute'>Begining a dispute</a></dt>
+      <dt><a href='<?php echo $this->url(); ?>/#dispute_interface'></a></dt>
+      <dt><a href='<?php echo $this->url(); ?>/#conducing_a_dispute'></a></dt>
+      <dt><a href='<?php echo $this->url(); ?>/#ending_a_dispute'>Ending a dispute</a></dt>
+      <dt><a href='<?php echo $this->url(); ?>/#dispute_outcome'>Viewing the outcome of the dispute</a></dt>
+   </dl>  
+   <div id='dispute-help'> 
+   <h4 class='sub-title'><a name='begining_a_dispute'></a>Begining a dispute <span><?php echo $topLink; ?></span></h4>
+   <h4 class='sub-title'><a name='dispute_interface'></a>Dispute interface<span><?php echo $topLink; ?></span></h4>
+   <h4 class='sub-title'><a name='conducing_a_dispute'></a>Conducting a dispute<span><?php echo $topLink; ?></span></h4>
+   <h4 class='sub-title'><a name='ending_a_dispute'></a>Ending a dispute<span><?php echo $topLink; ?></span></h4>
+   <h4 class='sub-title'><a name='dispute_outcome'></a>Viewing the outcome of the dispute<span><?php echo $topLink; ?></span></h4>
+   </div>
+   </div>
+</div>
+
+<?php
+/*
+      <dt><a href='<?php echo $this->url(); ?>/#'></a></dt>
+   <h4 class='sub-title'><a name=''></a><span><?php echo $topLink; ?></span></h4>
+*/
+?>

@@ -1,0 +1,1535 @@
+net
+{
+	huginenginegenerator3061656038650325130L = "edu.ucla.belief.inference.JoinTreeSettings@5a2ee4e8";
+}
+
+node Super_YourValue
+{
+	states = ("less the 5,000" "between 5,000 and 50,000" "between 50,001 and 100,000" "between 100,000, and 250,000" "between 250,001 and 500,000" "between 500,001 and 750,000" "between 750,001 and 1,000,000" "more than 1,000,000" );
+	position = (1690 3540);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Value of your Super";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Salary_YourWork
+{
+	states = ("Full tine" "Part time" "Studied" "Did not work" );
+	position = (1690 2700);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Your work situation";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Needs_YourAge
+{
+	states = ("younger than 21" "between 21 and 30" "between 31 and 40" "between 41 and 50" "between 51 and 60" "between 61 and 75" "older than 75" );
+	position = (790 510);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Your Age";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node HouseHoldDuties_CookingCleaning
+{
+	states = ("Much More" "More" "Same" "Less" "Much Less" );
+	position = (1690 4080);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Cooking and Cleaning";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Needs_super
+{
+	states = ("Much better" "Better" "Same" "Worse" "Much worse" );
+	position = (800 1800);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Supperannuation entitlements";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Negative_Abuse
+{
+	states = ("Much more" "More" "Same" "Less" "Much less" "NA" );
+	position = (940 5270);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Abuse";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node TheirProspects_Education
+{
+	states = ("Less than year 10 or equivilant" "Year 10 to 11 or equivilant" "Year 12 or equivilant" "Diploma" "Bachelor" "Post graduate studdies" );
+	position = (2050 1200);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Level of Education";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Assets_YourPreMarital
+{
+	states = ("less than $5,000" "$5,001 to $25,000" "$25,001 to $100,000" "$100,001 to $250,000" "$250,001 to $1,000,000" "$1,000,001 to $5,000,000" "$5,000,001 to $10,000,000" "more than $10,000,000" );
+	position = (2080 2160);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Your premarital contributions";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node ChildRearing_TheirTimeWithKids
+{
+	states = ("less than 5 per week" "5 to 10 per week" "11 to 20 per week" "21 to 30 per week" "more than 30 per week" );
+	position = (1660 5200);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Time they spend with your children";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Dependent_Access
+{
+	states = ("Full Access" "6 days a week" "5 days a week" "4 days a week" "3 days a week" "2 days a week" "1 day a week" "No Access" );
+	position = (1220 -10);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Access to dependents";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Salary_TheirSalary
+{
+	states = ("Less then 10,000 pre year" "between 10,001 and 25,000 pre year" "between 25,001 and 50,000 pre year" "between 50,001 and 75,000 pre year" "between 75,001 and 100,000 pre year" "between 100,001 and 150,000 pre year" "more than 150,000 pre year" );
+	position = (1690 3160);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Their Salary";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node YourSuper_value
+{
+	states = ("less than $5000" "between $5001 and $25,000" "between $25,001 and $75,000" "between $75,001 and $150,000" "between $150,001 and $250,000" "between $250,001 and $500,000" "between $500,001 and $1,000,000" "more than $1,000,000" );
+	position = (1220 1730);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Value of your super";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Waste_Diliberate
+{
+	states = ("Much more" "More" "Same" "Less" "Much less" );
+	position = (1300 5210);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Cause of waste 1";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node homemaker_child_rearing
+{
+	states = ("NA - there are children in marriage" "Much More" "More" "Same" "Less" "Much Less" );
+	position = (1310 4930);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Child Rearing";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Super_TheirPayOut
+{
+	states = ("now" "in less than 5 years" "in 5 to 10 years" "in 11 to 15 years" "in 16 to 20 years" "in 20 to 30 years" "in more than 30 years" );
+	position = (1690 3690);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Relizeing their super";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Assets_TheirPreMarital
+{
+	states = ("less than $5,000" "$5,001 to $25,000" "$25,001 to $100,000" "$100,001 to $250,000" "$250,001 to $1,000,000" "$1,000,001 to $5,000,000" "$5,000,001 to $10,000,000" "more than $10,000,000" );
+	position = (2070 2320);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Their premarital contributions";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Employment_TheirProspects
+{
+	states = ("Very high" "High" "Average" "Low" "Very low" );
+	position = (1630 1040);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Employment Prospects";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Employment_YourFullTimeWork
+{
+	states = ("Yes" "No" );
+	position = (1640 640);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Fulltime work";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node split
+{
+	states = ("100 percent" "90 percent" "80 percent" "70 percent" "60 percent" "50 percent" "40 percent" "30 percent" "20 percent" "10 percent" "0 percent" );
+	position = (20 460);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Percentage split of assets and liabilities";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Waste_YourKnowlageOf
+{
+	states = ("Yes" "No" );
+	position = (1290 5540);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Knowlage of Waste";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Dependent_Number
+{
+	states = ("None" "One" "Two" "Three" "Four" "More than 4" );
+	position = (1220 130);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Number of Dependents";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Assets_Marital
+{
+	states = ("Much higher" "Higher" "Same" "Lower" "Much lower" );
+	position = (1670 2460);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Main_Assets
+{
+	states = ("Much more" "More" "Same" "Less" "Much less" );
+	position = (1270 2390);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Contribution to assets";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Employment_YourProspects
+{
+	states = ("Very high" "High" "Average" "Low" "Very low" );
+	position = (1650 190);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Employment Prospects";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Assets_YourMarital
+{
+	states = ("less than 50,000 " "50,000 to 100,000 " "100,001 to 500,000" "500,001 to 1,000,000" "1,000,001 to 2,500,000" "2,500,001 to 5,000,000" "5,000,001 to 10,000,000" "more than 10,000,000" );
+	position = (2080 2460);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Your marital contributions";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Wealth_Debt
+{
+	states = ("Over 2 million" "Between $1 million and $2 million " "Between $650,000 and $1 million" "Between $250,000 and $650,000" "Between $100,000 and $250,000 " "Less than $100,000" );
+	position = (800 2400);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Value of Debt and other Liabilities";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node TheirFullTimeWork_Care
+{
+	states = ("Yes" "No" "There are no dependents" );
+	position = (2050 1360);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Care of dependent";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node TheirProspects_SkillDemand
+{
+	states = ("Very high" "High" "Average" "Low" "Very low" );
+	position = (2050 1040);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Demand for their skills";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Assets_TheirMarital
+{
+	states = ("less than 50,000" "50,000 to 100,000" "100,001 to 500,000" "500,001 to 1,000,000" "1,000,001 to 2,500,000" "2,500,001 to 5,000,000" "5,000,001 to 10,000,000" "more than 10,000,000" );
+	position = (2080 2620);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Their marital contributions";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Needs_TheirAge
+{
+	states = ("younger than 21" "between 21 and 30" "between 31 and 40" "between 41 and 50" "between 51 and 60" "between 61 and 75" "older than 75" );
+	position = (790 700);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Your ex's age";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node marriage_length_apart
+{
+	states = ("Less than 1/2 a year" "Less than 1 year" "Less than 5 years" "Less than 15 years" "More than 15 years" "More than 25 years" );
+	position = (1300 4090);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Number of Years Apart";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node TheirProspects_Pastemployment
+{
+	states = ("Unemployed" "Eregularly employed " "Regularly employed part time" "Regularly employed full time" );
+	position = (2040 890);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Past level of employment";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node HouseHoldDuties_HomeGarden
+{
+	states = ("Much More" "More" "Same" "Less" "Much Less" );
+	position = (1690 4250);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Maintaing the house and garden";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Main_NonFinacial
+{
+	states = ("Much More" "More" "Same" "Less" "Much Less" );
+	position = (1280 3200);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Non-financial contributions";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node YourSuperValuse_Splitable
+{
+	states = ("less than $5000" "between $5001 and $25,000" "between $25,001 and $75,000" "between $75,001 and $150,000" "between $150,001 and $250,000" "between $250,001 and $500,000" "between $500,001 and $1,000,000" "more than $1,000,000" );
+	position = (1660 1640);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Value of your splitable superannuation";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Main_Superannuation
+{
+	states = ("Much more" "More" "Same" "Less" "Much less" );
+	position = (1300 3600);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Superannuation contributions";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node HouseHoldDuties_Finances
+{
+	states = ("Much More" "More" "Same" "Less" "Much Less" );
+	position = (1690 4560);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Managing the finances";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Needs_Dependents
+{
+	states = ("There are no dependents" "Much More" "More" "Same" "Less" "Much Less" );
+	position = (780 130);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Obligations to dependents";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node homemaker_duties
+{
+	states = ("Much more" "More" "Same" "Less" "Much Less" );
+	position = (1300 4310);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "House Hold Duties";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Waste_TheirKnowlageOf
+{
+	states = ("Yes" "No" );
+	position = (1300 5710);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Knowlage of Waste";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Main_Salary
+{
+	states = ("Much more" "More" "Same" "Less" "Much less" );
+	position = (1270 2920);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Contributions by way of Salary";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node wealth
+{
+	states = ("Extreamly high" "Very high" "High" "Average" "Low" "Very low" "Extreamly Low" );
+	position = (380 2240);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Common Pool of Assets";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Waste_Negligent
+{
+	states = ("Much more" "More" "Same" "Less" "Much less" );
+	position = (1290 5380);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Cause of waste 2";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node contributions
+{
+	states = ("Much more" "More" "Same" "Less" "Much less" );
+	position = (320 4280);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Contributions";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node YourSuper_Phase
+{
+	states = ("Growth phase" "Payment phase" );
+	position = (1220 1580);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Your Super Phase";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Finacial_Other
+{
+	states = ("Much better" "Better" "Same" "Worse" "Much worse" );
+	position = (1210 1050);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Other income sources";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Wealth_Assets
+{
+	states = ("less than $75,000" "between $75,001 and $150,000" "between $150,001 and $500,000" "between $500,001 and $1,500,000" "between $1500,001 and $4,000,000" "between $4,000,000 and $10,000,000" "More than $10,000,000" );
+	position = (800 2240);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Value of assets in the marriage";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Employment_TheirFullTimeWork
+{
+	states = ("Yes" "No" );
+	position = (1650 1410);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Fulltime work";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node needs
+{
+	states = ("Much higher" "Higher" "Same" "Lower" "Much lower" );
+	position = (360 910);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Future Needs";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node marriage_length
+{
+	states = ("Very long" "Long" "Average" "Short" "Very short" "Extremely short" );
+	position = (860 3950);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Length of Marrage";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Wealth_Income
+{
+	states = ("Well above average" "Above average" "Average" "Less than average" "Well below average" );
+	position = (800 2100);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "The combined income during the marriage";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Assets_PreMarital
+{
+	states = ("Much higher" "Higher" "Same" "Lower" "Much lower" );
+	position = (1670 2320);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Contributions to premarital assets";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Financial_Investments
+{
+	states = ("Much better" "Better" "Same" "Worse" "Much worse" );
+	position = (1200 520);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Investments";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node contributions_homemaker
+{
+	states = ("Much more" "More" "Same" "Less" "Much less" );
+	position = (930 4590);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Homemaker Contributions";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node TheirSuperValuse_NonSplitable
+{
+	states = ("less than $5000" "between $5001 and $25,000" "between $25,001 and $75,000" "between $75,001 and $150,000" "between $150,001 and $250,000" "between $250,001 and $500,000" "between $500,001 and $1,000,000" "more than $1,000,000" );
+	position = (1650 2110);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Value of their non-splitable superannuation";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node YourFullTimeWork_Health
+{
+	states = ("Yes" "No" );
+	position = (2030 720);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Limitation dew to Health";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Super_YourPayOut
+{
+	states = ("Now" "in less than 5 years" "in 5 to 10 years" "in 11 to 15 years" "in 16 to 20 years" "in 20 to 30 years" "in more than 30 years" );
+	position = (1690 3380);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Relizeing your super";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node contributions_Negative
+{
+	states = ("Much more" "More" "Same" "Less" "Much less" "Not applicable" );
+	position = (570 5340);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Negative Contributions";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node marriage_length_years
+{
+	states = ("Less than 1/2 a year" "Less than 1 year" "Less than 5 years" "Less than 15 years" "More than 15 years" "More than 25 years" );
+	position = (1300 3820);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Number of years Married";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node marriage_length_cohab
+{
+	states = ("Less than 1/2 a year" "Less than 1 year" "Less than 5 years" "Less than 15 years" "More than 15 years" "More than 25 years" );
+	position = (1300 3950);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Number of years of Cohabitation";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node TheirrFullTimeWork_Health
+{
+	states = ("Yes" "No" );
+	position = (2060 1510);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Limitation dew to Health";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node ChildRearing_TheirTimeAtWork
+{
+	states = ("less than 10 per week" "10 to 20 per week" "21 to  30 per week" "31 to 40 per week" "more than 40 per week" );
+	position = (1670 5040);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Time they spend at work";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node TheirSuper_Phase
+{
+	states = ("Growth phase" "Payment phase" );
+	position = (1220 1890);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Their Super Phase";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node HouseHoldDuties_GettinBasics
+{
+	states = ("Much More" "More" "Same" "Less" "Much Less" );
+	position = (1690 4400);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Getting basic necessities";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node contributions_main
+{
+	states = ("Much higher" "Higher" "About the same" "Lower" "Much lower" );
+	position = (790 3050);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Main Contributions";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node TheirSuper_Value
+{
+	states = ("less than $5000" "between $5001 and $25,000" "between $25,001 and $75,000" "between $75,001 and $150,000" "between $150,001 and $250,000" "between $250,001 and $500,000" "between $500,001 and $1,000,000" "more than $1,000,000" );
+	position = (1220 2040);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Value of their super";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node YourSuperValuse_NonSplitable
+{
+	states = ("less than $5000" "between $5001 and $25,000" "between $25,001 and $75,000" "between $75,001 and $150,000" "between $150,001 and $250,000" "between $250,001 and $500,000" "between $500,001 and $1,000,000" "more than $1,000,000" );
+	position = (1660 1780);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Value of you non splitable superannuation";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node TheirSuperValuse_Splitable
+{
+	states = ("less than $5000" "between $5001 and $25,000" "between $25,001 and $75,000" "between $75,001 and $150,000" "between $150,001 and $250,000" "between $250,001 and $500,000" "between $500,001 and $1,000,000" "more than $1,000,000" );
+	position = (1650 1960);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Value of their splitable superannuation";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Negative_Waste
+{
+	states = ("Much more" "More" "Same" "Less" "Much less" "NA" );
+	position = (940 5440);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Waste";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node YourProspects_SkillDemand
+{
+	states = ("Very high" "High" "Average" "Low" "Very low" );
+	position = (2000 190);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Demand for your skills";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Needs_Financial
+{
+	states = ("Much Better" "Better" "Same" "Worse" "Much Worse" );
+	position = (780 910);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Financial Needs";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node ChildRearing_YourTimeAtWork
+{
+	states = ("less than 10 per week" "10 to 20 per week" "21 to 30 per week" "31 to 40 per week" "more than 40 per week" );
+	position = (1680 4720);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Time you spend at work";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node YourProspects_Education
+{
+	states = ("Less than year 10 or equivilant" "Year 10 to 11 or equivilant" "Year 12 or equivilant" "Diploma" "Bachelor" "Post graduate studdies" );
+	position = (2020 390);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Level of Education";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node YourProspects_Pastemployment
+{
+	states = ("Unemployed" "Eregularly emploloyed" "Regularly employed part time" "Regularly employed full time" );
+	position = (2010 20);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Past level of employment";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Needs_Health
+{
+	states = ("Much better" "Better" "Same" "Worse" "Much worse" );
+	position = (780 1240);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Health needs";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node YourFullTimeWork_Care
+{
+	states = ("Yes" "No" "There are no dependents" );
+	position = (2030 550);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Care of dependent";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Financial_Employment
+{
+	states = ("Much better" "Better" "Same" "Worse" "Much worse" );
+	position = (1200 800);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Employment Prospects";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Dependent_SupportRequired
+{
+	states = ("Very high" "High" "Average" "Low" "Very Low" );
+	position = (1220 280);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Support Requierments";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node ChildRearing_YourTimeWithKids
+{
+	states = ("less than 5 per week" "5 to 10 per week" "11 to 20 per week" "21 to 30 per week" "more than 30 per week" );
+	position = (1680 4870);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Time you spend with your children";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Salary_TheirWork
+{
+	states = ("Full time" "Part time" "Studied" "Did not work" );
+	position = (1690 3000);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Their work situation";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Salary_YourSalary
+{
+	states = ("less than 10,000 per year" "between 10,001 and 25,000 pre year" "between 25,001 and 50,000 pre year" "between 50,001 and 75,000 pre year" "between 75,001 and 100,000 pre year" "between 100,001 and 150,000 pre year" "more than 150,000 pre year" );
+	position = (1700 2860);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Your Salary";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Super_TheirValue
+{
+	states = ("less the 5,000" "between 5,000 and 50,000" "between 50,001 and 100,000" "between 100,000, and 250,000" "between 250,001 and 500,000" "between 500,001 and 750,000" "between 750,001 and 1,000,000" "more than 1,000,000" );
+	position = (1690 3850);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Value of their Super";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node Financial_Salary
+{
+	states = ("Much better" "better" "Same" "Worse" "Much worse" );
+	position = (1200 1280);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Income from Salary";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+potential ( Super_YourValue | Main_Superannuation )
+{
+	data = ((	0.07558139534883584	0.07558139534883584	0.08720930232557982	0.08720930232557982	0.0988372093023248	0.0988372093023248	0.23837209302325954	0.23837209302325954	)
+		(	0.07558139534883584	0.07558139534883584	0.08720930232557982	0.08720930232557982	0.0988372093023248	0.23837209302325954	0.23837209302325954	0.0988372093023248	)
+		(	0.07558139534883584	0.08720930232557982	0.0988372093023248	0.23837209302325954	0.23837209302325954	0.0988372093023248	0.08720930232557982	0.07558139534883584	)
+		(	0.09883720930232483	0.2383720930232596	0.2383720930232596	0.09883720930232483	0.08720930232557983	0.08720930232557983	0.07558139534883586	0.07558139534883586	)
+		(	0.2383720930232596	0.2383720930232596	0.09883720930232483	0.09883720930232483	0.08720930232557983	0.08720930232557983	0.07558139534883586	0.07558139534883586	));
+}
+potential ( Salary_YourWork | Main_Salary )
+{
+	data = ((	0.46511627906976627	0.3255813953488374	0.1860465116279085	0.023255813953487813	)
+		(	0.35714285714285643	0.35714285714285643	0.17857142857142821	0.10714285714285893	)
+		(	0.23728813559322	0.33898305084746	0.1864406779661	0.23728813559322	)
+		(	0.125	0.20833333333333	0.25	0.41666666666667	)
+		(	0.02439024390243903	0.14634146341463017	0.34146341463415036	0.48780487804878053	));
+}
+potential ( Needs_YourAge | needs )
+{
+	data = ((	0.04878048780487829	0.060975609756098365	0.0853658536585385	0.1463414634146309	0.19512195121951117	0.2195121951219513	0.24390243902439146	)
+		(	0.055555555555555886	0.06666666666666686	0.08888888888888882	0.1555555555555597	0.19999999999999962	0.21111111111110958	0.22222222222221955	)
+		(	0.10344827586206899	0.13793103448275865	0.1609195402298884	0.17241379310344832	0.1609195402298884	0.14942528735631852	0.11494252873562887	)
+		(	0.22222222222221955	0.21111111111110958	0.19999999999999962	0.1555555555555597	0.08888888888888882	0.06666666666666686	0.055555555555555886	)
+		(	0.24390243902439146	0.2195121951219513	0.19512195121951117	0.1463414634146309	0.0853658536585385	0.060975609756098365	0.04878048780487829	));
+}
+potential ( HouseHoldDuties_CookingCleaning | homemaker_duties )
+{
+	data = ((	0.4	0.35	0.2	0.04	0.01	)
+		(	0.2	0.4	0.25	0.12	0.03	)
+		(	0.1	0.2	0.4	0.2	0.1	)
+		(	0.03	0.12	0.25	0.4	0.2	)
+		(	0.01	0.04	0.2	0.35	0.4	));
+}
+potential ( Needs_super | needs )
+{
+	data = ((	0.41580041580041915	0.27027027027026945	0.20790020790020958	0.10395010395009979	0.0020790020790020956	)
+		(	0.22222222222222068	0.3703703703703711	0.2592592592592608	0.11111111111111034	0.03703703703703711	)
+		(	0.06	0.24	0.4	0.24	0.06	)
+		(	0.03703703703703711	0.11111111111111033	0.2592592592592608	0.3703703703703711	0.22222222222222066	)
+		(	0.0020790020790020956	0.10395010395009978	0.20790020790020955	0.27027027027026945	0.4158004158004191	));
+}
+potential ( Negative_Abuse | contributions_Negative )
+{
+	data = ((	0.38069133546520373	0.2855185015989028	0.1332419674128213	0.038069133546520376	0.019034566773260188	0.14344449520329142	)
+		(	0.21407164264306808	0.28542885685742747	0.21407164264306808	0.10703582132153905	0.035678607107178684	0.14371342942771873	)
+		(	0.07135721421435672	0.21407164264306913	0.28542885685742886	0.21407164264306913	0.07135721421435672	0.14371342942771942	)
+		(	0.035678607107178684	0.10703582132153906	0.2140716426430681	0.28542885685742747	0.2140716426430681	0.14371342942771873	)
+		(	0.01903456677326019	0.03806913354652038	0.13324196741282132	0.28551850159890285	0.38069133546520384	0.14344449520329144	)
+		(	0.09320020355297282	0.09320020355297282	0.2115433988192396	0.09320020355297282	0.09320020355297282	0.4156557869688692	));
+}
+potential ( TheirProspects_Education | Employment_TheirProspects )
+{
+	data = ((	0.03333333333333333	0.06666666666666667	0.13333333333333333	0.23333333333333334	0.3	0.23333333333333334	)
+		(	0.03333333333333333	0.06666666666666667	0.13333333333333333	0.23333333333333334	0.26666666666666666	0.26666666666666666	)
+		(	0.06666666666666667	0.1	0.16666666666666666	0.23333333333333334	0.23333333333333334	0.2	)
+		(	0.26666666666666666	0.26666666666666666	0.23333333333333334	0.13333333333333333	0.06666666666666667	0.03333333333333333	)
+		(	0.23333333333333334	0.3	0.23333333333333334	0.13333333333333333	0.06666666666666667	0.03333333333333333	));
+}
+potential ( Assets_YourPreMarital | Assets_PreMarital )
+{
+	data = ((	9.303190994511309E-4	0.00930319099451131	0.03721276397804544	0.08372871895060198	0.12094148292864143	0.170434459019442	0.24960461438273293	0.32784445064657386	)
+		(	0.0010989010989010922	0.02087912087912085	0.06593406593406453	0.10989010989010922	0.17582417582417875	0.20879120879120852	0.21978021978021844	0.1978021978021986	)
+		(	0.044483985765124745	0.08896797153024749	0.16014234875444905	0.20640569395017877	0.20640569395017877	0.16014234875444905	0.08896797153024749	0.044483985765124745	)
+		(	0.1978021978021986	0.21978021978021844	0.20879120879120852	0.17582417582417875	0.10989010989010922	0.06593406593406453	0.02087912087912085	0.0010989010989010922	)
+		(	0.32784445064657386	0.24960461438273296	0.17043445901944201	0.12094148292864144	0.083728718950602	0.037212763978045446	0.009303190994511311	9.30319099451131E-4	));
+}
+potential ( ChildRearing_TheirTimeWithKids | homemaker_child_rearing )
+{
+	data = ((	0.2	0.2	0.2	0.2	0.2	)
+		(	0.06666666666666721	0.13333333333333042	0.20000000000000062	0.2666666666666708	0.33333333333333104	)
+		(	0.033333333333333236	0.13333333333333094	0.2666666666666719	0.3333333333333323	0.23333333333333167	)
+		(	0.06666666666666674	0.26666666666666894	0.33333333333332865	0.26666666666666894	0.06666666666666674	)
+		(	0.23333333333333162	0.3333333333333323	0.2666666666666718	0.13333333333333092	0.03333333333333323	)
+		(	0.333333333333331	0.26666666666667077	0.20000000000000062	0.1333333333333304	0.0666666666666672	));
+}
+potential ( Dependent_Access | Needs_Dependents )
+{
+	data = ((	0.125	0.125	0.125	0.125	0.125	0.125	0.125	0.125	)
+		(	0.249999996875	0.21249999734375	0.18749999765625	0.13749999828125	0.11249999859375	0.06249999921875	0.03749999953125	1.249999984375E-8	)
+		(	0.24999999687500002	0.22499999718750002	0.21249999734375002	0.18749999765625003	0.062499999218750005	0.03749999953125001	0.024999999687500003	1.2499999843750002E-8	)
+		(	1.3157894390582117E-8	0.07894736634349171	0.15789473268698143	0.2631578878116324	0.2631578878116324	0.15789473268698143	0.07894736634349171	1.3157894390582117E-8	)
+		(	1.2499999843750004E-8	0.024999999687500007	0.03749999953125001	0.06249999921875001	0.18749999765625003	0.21249999734375005	0.22499999718750005	0.24999999687500005	)
+		(	1.2499999843750002E-8	0.03749999953125001	0.062499999218750005	0.11249999859375001	0.13749999828125004	0.18749999765625003	0.21249999734375002	0.24999999687500002	));
+}
+potential ( Salary_TheirSalary | Main_Salary )
+{
+	data = ((	0.2982131854590289	0.25927295132470907	0.20332717190387928	0.13555144793591953	0.0862600123228587	0.01725200246457194	1.2322858903265956E-4	)
+		(	0.19861317273220977	0.19871542441236978	0.24376800549835972	0.1840530242856698	0.12270201619044986	0.051125840079353946	0.001022516801587099	)
+		(	0.075	0.1125	0.1875	0.25	0.1875	0.1125	0.075	)
+		(	0.001022516801587099	0.051125840079353946	0.12270201619044986	0.1840530242856698	0.24376800549835972	0.19871542441236978	0.19861317273220977	)
+		(	1.2322858903265956E-4	0.01725200246457194	0.0862600123228587	0.13555144793591953	0.20332717190387928	0.25927295132470907	0.2982131854590289	));
+}
+potential ( YourSuper_value | Needs_super )
+{
+	data = ((	0.004166666666666767	0.008333333333333158	0.012500000000000051	0.016666666666666316	0.0833333333333316	0.1666666666666632	0.33333333333333887	0.37499999999999994	)
+		(	0.42283620821248685	8.904492952730074E-4	0.008904492952730074	0.026713478858190223	0.08904492952730074	0.13356739429094278	0.1513763801964096	0.16666666666666666	)
+		(	0.2187024744374068	0.18589710327178968	0.001929318006979723	0.019293180069797227	0.0771727202791863	0.17363862062817242	0.19293180069797228	0.13043478260869565	)
+		(	0.13800777227887562	0.12267357535899948	0.09200518151925106	0.14775079992471368	0.17382447049965644	0.14775079992471368	0.13036835287474233	0.047619047619047616	)
+		(	0.10991678671150461	0.03297503601345039	0.010991678671150461	0.001099167867115046	0.5219477128986023	0.2087790851594449	0.10438954257972245	0.009900990099009903	));
+}
+potential ( Waste_Diliberate | Negative_Waste )
+{
+	data = ((	0.625	0.21875	0.09375	0.05625	0.00625	)
+		(	0.125	0.625	0.15625	0.0625	0.03125	)
+		(	0.0625	0.125	0.625	0.125	0.0625	)
+		(	0.03125	0.0625	0.15625	0.625	0.125	)
+		(	0.00625	0.05625	0.09375	0.21875	0.625	)
+		(	0.2	0.2	0.2	0.2	0.2	));
+}
+potential ( homemaker_child_rearing | contributions_homemaker )
+{
+	data = ((	0.16666666666666896	0.33333333333332793	0.2916666666666682	0.16666666666666896	0.03333333333333279	0.008333333333333148	)
+		(	0.16666666666667	0.16666666666667	0.33333333333333	0.20833333333333	0.083333333333333	0.041666666666667	)
+		(	0.16666666666666935	0.08333333333333168	0.16666666666666935	0.3333333333333287	0.16666666666666935	0.08333333333333168	)
+		(	0.16666666666667	0.041666666666667	0.083333333333333	0.20833333333332998	0.33333333333333	0.16666666666667	)
+		(	0.16666666666666896	0.008333333333333148	0.03333333333333279	0.16666666666666896	0.2916666666666682	0.33333333333332793	));
+}
+potential ( Super_TheirPayOut | Main_Superannuation )
+{
+	data = ((	0.08451192579277457	0.10665731125242946	0.1356538681944693	0.14921925501391925	0.16278464183335917	0.18028399083044908	0.18088900708259908	)
+		(	0.09345794392523547	0.11214953271028055	0.12149532710280062	0.1401869158878507	0.1775700934579409	0.16822429906542083	0.18691588785047095	)
+		(	0.12711864406779871	0.13559322033897864	0.15254237288135847	0.1694915254237283	0.15254237288135847	0.13559322033897864	0.12711864406779871	)
+		(	0.18691588785047092	0.16822429906542083	0.1775700934579409	0.1401869158878507	0.1214953271028006	0.11214953271028054	0.09345794392523546	)
+		(	0.18088900708259908	0.18028399083044908	0.16278464183335917	0.14921925501391925	0.1356538681944693	0.10665731125242944	0.08451192579277457	));
+}
+potential ( Assets_TheirPreMarital | Assets_PreMarital )
+{
+	data = ((	0.32784445064657386	0.24960461438273296	0.17043445901944201	0.12094148292864144	0.083728718950602	0.037212763978045446	0.009303190994511311	9.30319099451131E-4	)
+		(	0.1978021978021986	0.21978021978021844	0.20879120879120852	0.17582417582417875	0.10989010989010922	0.06593406593406453	0.02087912087912085	0.0010989010989010922	)
+		(	0.044483985765124745	0.08896797153024749	0.16014234875444905	0.20640569395017877	0.20640569395017877	0.16014234875444905	0.08896797153024749	0.044483985765124745	)
+		(	0.0010989010989010922	0.02087912087912085	0.06593406593406453	0.10989010989010922	0.17582417582417875	0.20879120879120852	0.21978021978021844	0.1978021978021986	)
+		(	9.303190994511309E-4	0.00930319099451131	0.03721276397804544	0.08372871895060198	0.12094148292864143	0.170434459019442	0.24960461438273293	0.32784445064657386	));
+}
+potential ( Employment_TheirProspects | Financial_Employment )
+{
+	data = ((	0.38387715930902	0.32629558541267	0.19193857965451	0.095969289827255	0.0019193857965451	)
+		(	0.23032629558541	0.38387715930902	0.28790786948177	0.095969289827255	0.0019193857965451	)
+		(	0.002164502164502212	0.2813852813852816	0.43290043290043245	0.2813852813852816	0.002164502164502212	)
+		(	0.0019193857965451	0.095969289827255	0.28790786948177	0.38387715930902	0.23032629558541	)
+		(	0.0019193857965451	0.095969289827255	0.19193857965451	0.32629558541267	0.38387715930902	));
+}
+potential ( Employment_YourFullTimeWork | Financial_Employment )
+{
+	data = ((	0.8	0.2	)
+		(	0.9	0.1	)
+		(	0.7	0.3	)
+		(	0.1	0.9	)
+		(	0.2	0.8	));
+}
+potential ( split | )
+{
+	data = (	0.066176470588235	0.073529411764706	0.080882352941176	0.095588235294118	0.11764705882353	0.13235294117647	0.11764705882353	0.095588235294118	0.080882352941176	0.073529411764706	0.066176470588235	);
+}
+potential ( Waste_YourKnowlageOf | Negative_Waste )
+{
+	data = ((	0.58333333333333	0.41666666666667	)
+		(	0.625	0.375	)
+		(	0.5	0.5	)
+		(	0.375	0.625	)
+		(	0.41666666666667	0.58333333333333	)
+		(	0.5	0.5	));
+}
+potential ( Dependent_Number | Needs_Dependents )
+{
+	data = ((	0.9999995000002501	9.999995000002501E-8	9.999995000002501E-8	9.999995000002501E-8	9.999995000002501E-8	9.999995000002501E-8	)
+		(	1.851851817558305E-8	0.05555555452674916	0.11111110905350031	0.1851851817558305	0.27777777263374076	0.370370363511661	)
+		(	1.8518518175583035E-8	0.1111111090535002	0.1481481454046603	0.20370369993141038	0.24074073628258044	0.29629629080933056	)
+		(	2.0833332899306148E-8	0.14583333029514103	0.1666666631944412	0.18749999609375134	0.22916666189236165	0.27083332769097196	)
+		(	3.278688417092191E-8	0.32786884170921904	0.29508195753829913	0.2295081891964493	0.09836065251276571	0.049180326256382856	)
+		(	3.703703566529497E-8	0.37037035665294976	0.2962962853223598	0.22222221399176986	0.07407407133058995	0.037037035665294975	));
+}
+potential ( Assets_Marital | Main_Assets )
+{
+	data = ((	0.02830188679245292	0.1037735849056597	0.2075471698113194	0.2830188679245292	0.37735849056603893	)
+		(	0.03773584905660385	0.11320754716980955	0.254716981132079	0.3773584905660385	0.21698113207546915	)
+		(	0.09433962264150919	0.21698113207547046	0.37735849056604076	0.21698113207547046	0.09433962264150919	)
+		(	0.21698113207546915	0.3773584905660385	0.254716981132079	0.11320754716980955	0.03773584905660385	)
+		(	0.3773584905660389	0.2830188679245292	0.20754716981131938	0.10377358490565969	0.028301886792452918	));
+}
+potential ( Main_Assets | contributions_main )
+{
+	data = ((	0.34	0.3	0.22	0.11	0.03	)
+		(	0.23	0.34	0.27	0.12	0.04	)
+		(	0.1	0.23	0.34	0.23	0.1	)
+		(	0.04	0.12	0.27	0.34	0.23	)
+		(	0.03	0.11	0.22	0.3	0.34	));
+}
+potential ( Employment_YourProspects | Financial_Employment )
+{
+	data = ((	0.38387715930902	0.32629558541267	0.19193857965451	0.095969289827255	0.0019193857965451	)
+		(	0.23032629558541	0.38387715930902	0.28790786948177	0.095969289827255	0.0019193857965451	)
+		(	0.002164502164502212	0.2813852813852816	0.43290043290043245	0.2813852813852816	0.002164502164502212	)
+		(	0.0019193857965451	0.095969289827255	0.28790786948177	0.38387715930902	0.23032629558541	)
+		(	0.0019193857965451	0.095969289827255	0.19193857965451	0.32629558541267	0.38387715930902	));
+}
+potential ( Assets_YourMarital | Assets_Marital )
+{
+	data = ((	9.303190994511309E-4	0.00930319099451131	0.03721276397804544	0.08372871895060198	0.12094148292864143	0.170434459019442	0.24960461438273293	0.32784445064657386	)
+		(	0.0010989010989010922	0.02087912087912085	0.06593406593406453	0.10989010989010922	0.17582417582417875	0.20879120879120852	0.21978021978021844	0.1978021978021986	)
+		(	0.044483985765124745	0.08896797153024749	0.16014234875444905	0.20640569395017877	0.20640569395017877	0.16014234875444905	0.08896797153024749	0.044483985765124745	)
+		(	0.1978021978021986	0.21978021978021844	0.20879120879120852	0.17582417582417875	0.10989010989010922	0.06593406593406453	0.02087912087912085	0.0010989010989010922	)
+		(	0.32784445064657386	0.24960461438273296	0.17043445901944201	0.12094148292864144	0.083728718950602	0.037212763978045446	0.009303190994511311	9.30319099451131E-4	));
+}
+potential ( Wealth_Debt | wealth )
+{
+	data = ((	0.026538996401312052	0.07961698920393616	0.13163342215051024	0.16878801711234034	0.23354316833155048	0.35987940680035074	)
+		(	0.02380952380952395	0.0476190476190479	0.11904761904761976	0.1904761904761896	0.2619047619047595	0.3571428571428593	)
+		(	0.058823529411765295	0.11764705882353059	0.15686274509804077	0.17647058823529088	0.21568627450980107	0.27450980392157137	)
+		(	0.08273579702151175	0.11031439602868098	0.2482073910645322	0.2785438499724225	0.16822945394374153	0.11196911196911101	)
+		(	0.11627906976743943	0.18604651162790908	0.3023255813953485	0.18604651162790908	0.13953488372092931	0.06976744186046466	)
+		(	0.3571428571428593	0.26190476190475953	0.19047619047618963	0.11904761904761978	0.04761904761904791	0.023809523809523954	)
+		(	0.3461538461538476	0.26923076923076816	0.19230769230768865	0.11538461538461921	0.057692307692307605	0.019230769230768868	));
+}
+potential ( TheirFullTimeWork_Care | Employment_TheirFullTimeWork )
+{
+	data = ((	0.05	0.5	0.45	)
+		(	0.97	0.012	0.018	));
+}
+potential ( TheirProspects_SkillDemand | Employment_TheirProspects )
+{
+	data = ((	0.40733197556008066	0.34623217922607064	0.20366598778004033	0.04073319755600807	0.0020366598778004037	)
+		(	0.23076923076923095	0.3846153846153816	0.2884615384615412	0.07692307692307732	0.01923076923076908	)
+		(	0.03448275862069	0.29310344827586	0.3448275862069	0.29310344827586	0.03448275862069	)
+		(	0.019230769230769076	0.0769230769230773	0.28846153846154116	0.38461538461538153	0.23076923076923092	)
+		(	0.0020366598778004032	0.040733197556008065	0.2036659877800403	0.3462321792260706	0.4073319755600806	));
+}
+potential ( Assets_TheirMarital | Assets_Marital )
+{
+	data = ((	0.32784445064657386	0.24960461438273296	0.17043445901944201	0.12094148292864144	0.083728718950602	0.037212763978045446	0.009303190994511311	9.30319099451131E-4	)
+		(	0.1978021978021986	0.21978021978021844	0.20879120879120852	0.17582417582417875	0.10989010989010922	0.06593406593406453	0.02087912087912085	0.0010989010989010922	)
+		(	0.044483985765124745	0.08896797153024749	0.16014234875444905	0.20640569395017877	0.20640569395017877	0.16014234875444905	0.08896797153024749	0.044483985765124745	)
+		(	0.0010989010989010922	0.02087912087912085	0.06593406593406453	0.10989010989010922	0.17582417582417875	0.20879120879120852	0.21978021978021844	0.1978021978021986	)
+		(	9.303190994511309E-4	0.00930319099451131	0.03721276397804544	0.08372871895060198	0.12094148292864143	0.170434459019442	0.24960461438273293	0.32784445064657386	));
+}
+potential ( Needs_TheirAge | needs )
+{
+	data = ((	0.04878048780487829	0.060975609756098365	0.0853658536585385	0.1463414634146309	0.19512195121951117	0.2195121951219513	0.24390243902439146	)
+		(	0.055555555555555886	0.06666666666666686	0.08888888888888882	0.1555555555555597	0.19999999999999962	0.21111111111110958	0.22222222222221955	)
+		(	0.10344827586206899	0.13793103448275865	0.1609195402298884	0.17241379310344832	0.1609195402298884	0.14942528735631852	0.11494252873562887	)
+		(	0.22222222222221955	0.21111111111110958	0.19999999999999962	0.1555555555555597	0.08888888888888882	0.06666666666666686	0.055555555555555886	)
+		(	0.24390243902439146	0.2195121951219513	0.19512195121951117	0.1463414634146309	0.0853658536585385	0.060975609756098365	0.04878048780487829	));
+}
+potential ( marriage_length_apart | marriage_length )
+{
+	data = ((	0.3422053231939177	0.3802281368821274	0.22813688212927843	0.038022813688212746	0.0076045627376424485	0.0038022813688212745	)
+		(	0.29702970297030035	0.33003300330033036	0.2640264026402603	0.09900990099009911	0.006600660066006607	0.0033003300330033034	)
+		(	0.2564102564102597	0.29304029304028967	0.32967032967032966	0.10989010989010987	0.007326007326007291	0.0036630036630036955	)
+		(	0.11409385034147114	0.1303929718188213	0.14669209329617147	0.16299121477352163	0.20373901846690204	0.24209085130311242	)
+		(	0.10811784845481892	0.13514731056851864	0.14415713127308855	0.1801964140913582	0.2311019010721677	0.201279394540048	)
+		(	0.14432989690721856	0.15463917525772844	0.18556701030927814	0.20618556701030794	0.16494845360824836	0.14432989690721856	));
+}
+potential ( TheirProspects_Pastemployment | Employment_TheirProspects )
+{
+	data = ((	0.052631578947368106	0.18421052631579035	0.3157894736842106	0.4473684210526309	)
+		(	0.023809523809523905	0.1428571428571394	0.35714285714285854	0.4761904761904781	)
+		(	0.10344827586206895	0.2068965517241379	0.3448275862068965	0.3448275862068965	)
+		(	0.4761904761904781	0.35714285714285854	0.1428571428571394	0.023809523809523905	)
+		(	0.44736842105263086	0.3157894736842106	0.18421052631579035	0.0526315789473681	));
+}
+potential ( HouseHoldDuties_HomeGarden | homemaker_duties )
+{
+	data = ((	0.4	0.35	0.2	0.04	0.01	)
+		(	0.2	0.4	0.25	0.12	0.03	)
+		(	0.1	0.2	0.4	0.2	0.1	)
+		(	0.03	0.12	0.25	0.4	0.2	)
+		(	0.01	0.04	0.2	0.35	0.4	));
+}
+potential ( Main_NonFinacial | contributions_main )
+{
+	data = ((	0.333333333333331	0.2761904761904808	0.20952380952381064	0.12380952380952037	0.057142857142857176	)
+		(	0.19047619047619094	0.33333333333333165	0.2380952380952412	0.1428571428571407	0.09523809523809547	)
+		(	0.1428571428571414	0.1904761904761919	0.3333333333333333	0.1904761904761919	0.1428571428571414	)
+		(	0.09523809523809548	0.1428571428571407	0.23809523809524122	0.3333333333333317	0.19047619047619097	)
+		(	0.05714285714285718	0.12380952380952039	0.20952380952381064	0.2761904761904808	0.33333333333333104	));
+}
+potential ( YourSuperValuse_Splitable | YourSuper_value )
+{
+	data = ((	0.6104298569528782	0.20783892713266092	0.12470335627959855	0.041567785426533194	0.013855928475511063	0.001385592847551106	1.3855928475511062E-4	7.999360051195908E-5	)
+		(	1.2739001613481214E-5	0.14567091743610697	0.500670943227917	0.14567091743610697	0.087402550461666	0.029134183487222312	0.009711394495740157	0.08172635445362718	)
+		(	0.001059571906034484	1.0595719060344842E-4	0.08347104672795005	0.13911841121325488	0.5198391299001793	0.13911841121325488	0.08347104672795005	0.03381642512077295	)
+		(	0.02842281783816087	0.009474272612720033	9.474272612720035E-4	0.03152746409432934	0.09458239228298494	0.157637320471639	0.44663907466966307	0.23076923076923078	)
+		(	0.2836074872376606	0.17016449234259792	0.05672149744753368	0.0189071658158443	0.0189071658158443	0.05672149744753368	0.17016449234259792	0.22480620155038764	)
+		(	0.1595051579233739	0.4519312807829216	0.1595051579233739	0.095703094754028	0.0319010315846766	9.586532838668254E-4	0.009586532838668253	0.0909090909090909	)
+		(	0.0280193358980164	0.08405800769404821	0.140096679490077	0.5234945923612597	0.140096679490077	0.08405800769404821	1.0670227213050187E-4	6.999510034297599E-5	)
+		(	0.12244897959183673	0.17687074829931973	0.272108843537415	0.19727891156462585	0.1292517006802721	0.06802721088435375	0.027210884353741496	0.006802721088435374	));
+}
+potential ( Main_Superannuation | contributions_main )
+{
+	data = ((	0.333333333333331	0.2761904761904808	0.20952380952381064	0.12380952380952037	0.057142857142857176	)
+		(	0.19047619047619094	0.33333333333333165	0.2380952380952412	0.1428571428571407	0.09523809523809547	)
+		(	0.1428571428571414	0.1904761904761919	0.3333333333333333	0.1904761904761919	0.1428571428571414	)
+		(	0.09523809523809548	0.1428571428571407	0.23809523809524122	0.3333333333333317	0.19047619047619097	)
+		(	0.05714285714285718	0.12380952380952039	0.20952380952381064	0.2761904761904808	0.33333333333333104	));
+}
+potential ( HouseHoldDuties_Finances | homemaker_duties )
+{
+	data = ((	0.4	0.35	0.2	0.04	0.01	)
+		(	0.2	0.4	0.25	0.12	0.03	)
+		(	0.1	0.2	0.4	0.2	0.1	)
+		(	0.03	0.12	0.25	0.4	0.2	)
+		(	0.01	0.04	0.2	0.35	0.4	));
+}
+potential ( Needs_Dependents | needs )
+{
+	data = ((	0.3	0.3	0.22	0.12	0.058	0.002	)
+		(	0.3	0.14	0.3	0.18	0.07	0.01	)
+		(	0.3	0.07	0.13	0.3	0.13	0.07	)
+		(	0.3	0.01	0.07	0.18	0.3	0.14	)
+		(	0.3	0.002	0.058	0.12	0.22	0.3	));
+}
+potential ( homemaker_duties | contributions_homemaker )
+{
+	data = ((	0.4	0.35	0.2	0.04	0.01	)
+		(	0.2	0.4	0.25	0.12	0.03	)
+		(	0.1	0.2	0.4	0.2	0.1	)
+		(	0.03	0.12	0.25	0.4	0.2	)
+		(	0.01	0.04	0.2	0.35	0.4	));
+}
+potential ( Waste_TheirKnowlageOf | Negative_Waste )
+{
+	data = ((	0.375	0.625	)
+		(	0.41666666666667	0.58333333333333	)
+		(	0.5	0.5	)
+		(	0.58333333333333	0.41666666666667	)
+		(	0.625	0.375	)
+		(	0.5	0.5	));
+}
+potential ( Main_Salary | contributions_main )
+{
+	data = ((	0.4	0.35	0.2	0.04	0.01	)
+		(	0.2	0.4	0.25	0.12	0.03	)
+		(	0.1	0.2	0.4	0.2	0.1	)
+		(	0.03	0.12	0.25	0.4	0.2	)
+		(	0.01	0.04	0.2	0.35	0.4	));
+}
+potential ( wealth | split )
+{
+	data = ((	0.17408123791102892	0.16441005802707898	0.1489361702127691	0.07736943907156553	0.13539651837523917	0.1450676982591891	0.15473887814312906	)
+		(	0.1707779886148	0.16129032258065	0.14231499051233	0.0853889943074	0.13851992409867	0.146110056926	0.15559772296015	)
+		(	0.16	0.14	0.12	0.1	0.15	0.16	0.17	)
+		(	0.13861386138613863	0.12871287128712872	0.1188118811881188	0.10891089108910892	0.15841584158415842	0.1683168316831683	0.17821782178217824	)
+		(	0.15280135823429541	0.13582342954159593	0.12733446519524616	0.13582342954159593	0.14431239388794567	0.1460101867572156	0.15789473684210525	)
+		(	0.14220183486239	0.14067278287462	0.13914373088685	0.13761467889908	0.14373088685015	0.14678899082569	0.14984709480122	)
+		(	0.15280135823429541	0.13582342954159593	0.12733446519524616	0.13582342954159593	0.14431239388794567	0.1460101867572156	0.15789473684210525	)
+		(	0.13861386138613863	0.12871287128712872	0.1188118811881188	0.10891089108910892	0.15841584158415842	0.1683168316831683	0.17821782178217824	)
+		(	0.16	0.14	0.12	0.1	0.15	0.16	0.17	)
+		(	0.16283524904214935	0.16283524904214935	0.14367816091953942	0.08620689655172366	0.13984674329501945	0.1475095785440594	0.15708812260535937	)
+		(	0.17408123791102892	0.16441005802707898	0.1489361702127691	0.07736943907156553	0.13539651837523917	0.1450676982591891	0.15473887814312906	));
+}
+potential ( Waste_Negligent | Negative_Waste )
+{
+	data = ((	0.625	0.21875	0.09375	0.05625	0.00625	)
+		(	0.125	0.625	0.15625	0.0625	0.03125	)
+		(	0.0625	0.125	0.625	0.125	0.0625	)
+		(	0.03125	0.0625	0.15625	0.625	0.125	)
+		(	0.00625	0.05625	0.09375	0.21875	0.625	)
+		(	0.2	0.2	0.2	0.2	0.2	));
+}
+potential ( contributions | split )
+{
+	data = ((	0.0036231884057971076	0.03623188405797107	0.2536231884058005	0.34420289855072067	0.3623188405797107	)
+		(	0.014981273408240016	0.04868913857677905	0.22471910112360022	0.3370786516853903	0.37453183520599037	)
+		(	0.026515151515151974	0.06439393939393893	0.2083333333333298	0.3219696969696997	0.37878787878787956	)
+		(	0.04	0.08	0.2	0.32	0.36	)
+		(	0.04261363636363574	0.15624999999999906	0.25568181818181845	0.2840909090909083	0.26136363636363846	)
+		(	0.15679442508710922	0.2439024390243888	0.3484320557491283	0.15679442508710922	0.09407665505226455	)
+		(	0.26136363636363846	0.2840909090909083	0.25568181818181845	0.15624999999999906	0.04261363636363574	)
+		(	0.36	0.32	0.19999999999999998	0.08	0.04	)
+		(	0.3787878787878796	0.32196969696969974	0.20833333333332982	0.06439393939393895	0.026515151515151977	)
+		(	0.37453183520599037	0.3370786516853903	0.22471910112360022	0.04868913857677905	0.014981273408240016	)
+		(	0.3623188405797107	0.34420289855072067	0.2536231884058005	0.03623188405797107	0.0036231884057971076	));
+}
+potential ( YourSuper_Phase | Needs_super )
+{
+	data = ((	0.0333333333333329	0.9666666666666671	)
+		(	0.4	0.6	)
+		(	0.5	0.5	)
+		(	0.6	0.4	)
+		(	0.9666666666666671	0.0333333333333329	));
+}
+potential ( Finacial_Other | Needs_Financial )
+{
+	data = ((	0.3703703703703674	0.277777777777778	0.1851851851851887	0.1296296296296291	0.03703703703703674	)
+		(	0.24	0.32	0.16	0.272	0.008	)
+		(	0.078125	0.265625	0.3125	0.265625	0.078125	)
+		(	0.07462686567164185	0.2537313432835795	0.14925373134327968	0.2985074626865694	0.22388059701492954	)
+		(	0.03703703703703674	0.1296296296296291	0.1851851851851887	0.277777777777778	0.3703703703703674	));
+}
+potential ( Wealth_Assets | wealth )
+{
+	data = ((	0.004329004329004316	0.02164502164502208	0.043290043290043156	0.08658008658008733	0.17316017316017063	0.23809523809524086	0.4329004329004316	)
+		(	0.003984063745019876	0.023904382470119855	0.04780876494023871	0.09561752988047642	0.19123505976095884	0.23904382470119856	0.3984063745019876	)
+		(	0.006756756756756814	0.02702702702702706	0.05405405405405412	0.10135135135135022	0.16891891891892039	0.33783783783784077	0.30405405405405067	)
+		(	0.014962593516209	0.037406483790524	0.099750623441397	0.19950124688279	0.24937655860349	0.21197007481297	0.18703241895262	)
+		(	0.3040540540540506	0.3378378378378407	0.16891891891892036	0.10135135135135019	0.054054054054054106	0.027027027027027053	0.006756756756756813	)
+		(	0.3984063745019876	0.23904382470119856	0.19123505976095886	0.09561752988047643	0.04780876494023872	0.023904382470119858	0.003984063745019876	)
+		(	0.4329004329004316	0.23809523809524086	0.17316017316017063	0.08658008658008733	0.043290043290043156	0.02164502164502208	0.004329004329004316	));
+}
+potential ( Employment_TheirFullTimeWork | Financial_Employment )
+{
+	data = ((	0.8	0.2	)
+		(	0.9	0.1	)
+		(	0.7	0.3	)
+		(	0.1	0.9	)
+		(	0.2	0.8	));
+}
+potential ( needs | split )
+{
+	data = ((	0.00836820083682028	0.029288702928870286	0.18828451882845182	0.4184100418410041	0.3556485355648535	)
+		(	0.01937984496123979	0.03875968992248058	0.18604651162790797	0.3875968992248058	0.36821705426356593	)
+		(	0.03041825095056979	0.04942965779467666	0.19771863117870864	0.3422053231939176	0.38022813688212737	)
+		(	0.037313432835821225	0.05970149253731336	0.20522388059701122	0.32462686567164195	0.3731343283582122	)
+		(	0.053956834532374064	0.07194244604316509	0.21582733812950025	0.30575539568345034	0.3525179856115104	)
+		(	0.21951219512195222	0.23170731707317233	0.24390243902439246	0.1707317073170717	0.13414634146341137	)
+		(	0.3525179856115103	0.3057553956834503	0.2158273381295002	0.07194244604316508	0.05395683453237405	)
+		(	0.37313432835821225	0.32462686567164195	0.20522388059701124	0.05970149253731336	0.03731343283582123	)
+		(	0.3802281368821273	0.3422053231939176	0.1977186311787086	0.04942965779467665	0.030418250950569787	)
+		(	0.368217054263566	0.3875968992248058	0.18604651162790797	0.03875968992248058	0.01937984496123979	)
+		(	0.3556485355648535	0.4184100418410041	0.18828451882845185	0.02928870292887029	0.008368200836820282	));
+}
+potential ( marriage_length | contributions )
+{
+	data = ((	0.2380952380952424	0.19047619047619194	0.14285714285714143	0.12380952380952125	0.11428571428571115	0.19047619047619194	)
+		(	0.19704433497537	0.17733990147783	0.16748768472906	0.1576354679803	0.15270935960591	0.14778325123153	)
+		(	0.18090452261307	0.19095477386934998	0.20100502512562998	0.17587939698492	0.15075376884422	0.10050251256280998	)
+		(	0.19704433497537	0.17733990147783	0.16748768472906	0.1576354679803	0.15270935960591	0.14778325123153	)
+		(	0.26315789473684	0.21052631578947	0.15789473684211	0.13684210526316	0.12631578947368	0.10526315789474	));
+}
+potential ( Wealth_Income | wealth )
+{
+	data = ((	0.35087719298246073	0.2807017543859606	0.21052631578947043	0.10526315789474021	0.052631578947368106	)
+		(	0.3225806451612906	0.29032258064516053	0.20967741935484038	0.11290322580645021	0.06451612903225812	)
+		(	0.2580645161290305	0.32258064516129065	0.22580645161290044	0.12903225806452026	0.06451612903225812	)
+		(	0.15789473684211	0.21052631578946998	0.26315789473684	0.21052631578946998	0.15789473684211	)
+		(	0.06451612903225812	0.12903225806452026	0.22580645161290044	0.32258064516129065	0.2580645161290305	)
+		(	0.06451612903225812	0.11290322580645022	0.2096774193548404	0.29032258064516053	0.32258064516129065	)
+		(	0.052631578947368106	0.10526315789474021	0.21052631578947043	0.28070175438596057	0.35087719298246073	));
+}
+potential ( Assets_PreMarital | Main_Assets )
+{
+	data = ((	0.3489840205168696	0.33537186821857967	0.1775498125863098	0.10850266324718988	0.029591635431050964	)
+		(	0.19047619047619094	0.33333333333333165	0.2380952380952412	0.1428571428571407	0.09523809523809547	)
+		(	0.1428571428571414	0.1904761904761919	0.3333333333333333	0.1904761904761919	0.1428571428571414	)
+		(	0.09523809523809548	0.1428571428571407	0.23809523809524122	0.3333333333333317	0.19047619047619097	)
+		(	0.029591635431050964	0.10850266324718988	0.1775498125863098	0.33537186821857967	0.3489840205168696	));
+}
+potential ( Financial_Investments | Needs_Financial )
+{
+	data = ((	0.4987531172069836	0.29925187032419215	0.14962593516209108	0.04987531172069836	0.0024937655860349183	)
+		(	0.21231422505307898	0.42462845010615796	0.2972399150743086	0.06369426751592369	0.0021231422505307894	)
+		(	0.0020746887966804984	0.29045643153526973	0.4149377593360996	0.29045643153526973	0.0020746887966804984	)
+		(	0.0021231422505307894	0.06369426751592369	0.2972399150743086	0.42462845010615796	0.21231422505307898	)
+		(	0.002493765586034918	0.049875311720698354	0.14962593516209105	0.2992518703241921	0.49875311720698356	));
+}
+potential ( contributions_homemaker | contributions )
+{
+	data = ((	0.375	0.3125	0.25	0.05	0.0125	)
+		(	0.1875	0.375	0.25	0.125	0.0625	)
+		(	0.02380952380952381	0.2380952380952381	0.4761904761904762	0.2380952380952381	0.02380952380952381	)
+		(	0.0625	0.125	0.25	0.375	0.1875	)
+		(	0.0125	0.05	0.25	0.3125	0.375	));
+}
+potential ( TheirSuperValuse_NonSplitable | TheirSuper_Value )
+{
+	data = ((	0.49654521775184507	0.24827260887592253	0.1862044566569369	0.062068152218980634	0.0062068152218980625	6.206815221898064E-4	6.206815221898063E-5	1.999960000799984E-5	)
+		(	6.2040550211677E-6	0.19880493431761134	0.3976098686352127	0.19880493431761134	0.14910370073820103	0.04970123357940134	0.004970123357940134	9.990009990009992E-4	)
+		(	4.8335964177664305E-4	4.83359641776643E-5	0.1261901223163598	0.16825349642181303	0.33650699284362606	0.16825349642181303	0.1261901223163598	0.07407407407407408	)
+		(	0.04711639914815879	0.0047116399148158785	4.711639914815879E-4	0.04518091221219678	0.13554273663658878	0.18072364884879022	0.36144729769758044	0.22480620155038758	)
+		(	0.25614754098360965	0.19211065573770336	0.06403688524590163	0.006403688524590164	0.006403688524590164	0.06403688524590163	0.19211065573770336	0.21875000000000003	)
+		(	0.19767337919472353	0.395346758389457	0.19767337919472353	0.14825503439604512	0.04941834479868237	5.153535740580864E-4	0.005153535740580863	0.005964214711729623	)
+		(	0.04347539311779015	0.13042617935337042	0.1739015724711606	0.34780314494233117	0.1739015724711606	0.13042617935337042	4.995854681279603E-5	1.599974400409594E-5	)
+		(	0.06802721088435375	0.12244897959183673	0.17687074829931973	0.272108843537415	0.1836734693877551	0.1360544217687075	0.034013605442176874	0.006802721088435374	));
+}
+potential ( YourFullTimeWork_Health | Employment_YourFullTimeWork )
+{
+	data = ((	0.3	0.7	)
+		(	0.9	0.1	));
+}
+potential ( Super_YourPayOut | Main_Superannuation )
+{
+	data = ((	0.19779202750050084	0.17571230250545072	0.15865670655120065	0.14543531433860057	0.13221392212600055	0.10610167250611044	0.08408805447213635	)
+		(	0.18691588785047092	0.16822429906542083	0.1775700934579409	0.1401869158878507	0.1214953271028006	0.11214953271028054	0.09345794392523546	)
+		(	0.12711864406779871	0.13559322033897864	0.15254237288135847	0.1694915254237283	0.15254237288135847	0.13559322033897864	0.12711864406779871	)
+		(	0.09345794392523547	0.11214953271028055	0.12149532710280062	0.1401869158878507	0.1775700934579409	0.16822429906542083	0.18691588785047095	)
+		(	0.08408805447213634	0.10610167250611043	0.13221392212600053	0.14543531433860057	0.15865670655120065	0.1757123025054507	0.1977920275005008	));
+}
+potential ( contributions_Negative | contributions )
+{
+	data = ((	0.010683760683760956	0.042735042735042826	0.16025641025640935	0.21367521367520914	0.4273504273504283	0.14529914529914942	)
+		(	0.021367521367520875	0.0854700854700845	0.16025641025640905	0.4273504273504275	0.16025641025640905	0.14529914529914917	)
+		(	0.05341880341880268	0.16025641025640902	0.42735042735042744	0.16025641025640902	0.05341880341880268	0.14529914529914914	)
+		(	0.16025641025640905	0.4273504273504275	0.16025641025640905	0.0854700854700845	0.021367521367520875	0.14529914529914917	)
+		(	0.4273504273504283	0.21367521367520914	0.16025641025640935	0.042735042735042826	0.010683760683760956	0.14529914529914942	));
+}
+potential ( marriage_length_years | marriage_length )
+{
+	data = ((	6.727211570803906E-4	0.002690884628321603	0.013454423141608014	0.05045408678102905	0.1009081735620601	0.8318197107299008	)
+		(	5.5245566543285176E-5	0.005524556654328518	0.055245566543285184	0.11049113308657037	0.2762278327164209	0.5524556654328517	)
+		(	6.210794360598784E-5	0.006210794360598783	0.12421588721196965	0.6210794360598784	0.1863238308179595	0.06210794360598783	)
+		(	0.22421524663676995	0.4484304932735399	0.26905829596412995	0.04484304932735399	0.008968609865470899	0.004484304932735399	)
+		(	0.7352941176470603	0.14705882352941005	0.07352941176470602	0.02205882352941201	0.014705882352941006	0.007352941176470604	)
+		(	0.9089991001817906	0.09089991001817907	9.089991001817907E-5	9.089991001817907E-6	9.089991001817908E-7	9.089991001817907E-8	));
+}
+potential ( marriage_length_cohab | marriage_length )
+{
+	data = ((	0.025	0.075	0.15	0.2	0.25	0.3	)
+		(	0.05263157894736842	0.10526315789473684	0.15789473684210525	0.21052631578947367	0.2631578947368421	0.21052631578947367	)
+		(	0.045454545454545456	0.13636363636363635	0.20454545454545456	0.2727272727272727	0.20454545454545456	0.13636363636363635	)
+		(	0.13636363636363635	0.20454545454545456	0.2727272727272727	0.20454545454545456	0.13636363636363635	0.045454545454545456	)
+		(	0.2	0.3	0.2	0.15	0.1	0.05	)
+		(	0.3	0.25	0.2	0.15	0.075	0.025	));
+}
+potential ( TheirrFullTimeWork_Health | Employment_TheirFullTimeWork )
+{
+	data = ((	0.3	0.7	)
+		(	0.9	0.1	));
+}
+potential ( ChildRearing_TheirTimeAtWork | homemaker_child_rearing )
+{
+	data = ((	0.2	0.2	0.2	0.2	0.2	)
+		(	0.033333333333333236	0.13333333333333094	0.21666666666667153	0.283333333333332	0.33333333333333237	)
+		(	0.05000000000000146	0.13333333333333122	0.2500000000000023	0.333333333333333	0.23333333333333214	)
+		(	0.10000000000000102	0.23333333333333237	0.3333333333333333	0.23333333333333237	0.10000000000000102	)
+		(	0.23333333333333212	0.333333333333333	0.2500000000000023	0.1333333333333312	0.05000000000000145	)
+		(	0.3333333333333323	0.283333333333332	0.21666666666667153	0.13333333333333094	0.033333333333333236	));
+}
+potential ( TheirSuper_Phase | Needs_super )
+{
+	data = ((	0.0333333333333329	0.9666666666666671	)
+		(	0.4	0.6	)
+		(	0.5	0.5	)
+		(	0.6	0.4	)
+		(	0.9666666666666671	0.0333333333333329	));
+}
+potential ( HouseHoldDuties_GettinBasics | homemaker_duties )
+{
+	data = ((	0.4	0.35	0.2	0.04	0.01	)
+		(	0.2	0.4	0.25	0.12	0.03	)
+		(	0.1	0.2	0.4	0.2	0.1	)
+		(	0.03	0.12	0.25	0.4	0.2	)
+		(	0.01	0.04	0.2	0.35	0.4	));
+}
+potential ( contributions_main | contributions )
+{
+	data = ((	0.4	0.3	0.25	0.04	0.01	)
+		(	0.2	0.4	0.3	0.08	0.02	)
+		(	0.1	0.2	0.4	0.2	0.1	)
+		(	0.02	0.08	0.3	0.4	0.2	)
+		(	0.01	0.04	0.25	0.3	0.4	));
+}
+potential ( TheirSuper_Value | Needs_super )
+{
+	data = ((	0.004166666666666767	0.008333333333333158	0.012500000000000051	0.016666666666666316	0.0833333333333316	0.1666666666666632	0.33333333333333887	0.37499999999999994	)
+		(	0.42283620821248685	8.904492952730074E-4	0.008904492952730074	0.026713478858190223	0.08904492952730074	0.13356739429094278	0.1513763801964096	0.16666666666666666	)
+		(	0.2187024744374068	0.18589710327178968	0.001929318006979723	0.019293180069797227	0.0771727202791863	0.17363862062817242	0.19293180069797225	0.13043478260869568	)
+		(	0.13800777227887562	0.12267357535899948	0.09200518151925106	0.14775079992471368	0.17382447049965644	0.14775079992471368	0.13036835287474233	0.047619047619047616	)
+		(	0.10991678671150458	0.03297503601345039	0.010991678671150461	0.001099167867115046	0.5219477128986023	0.20877908515944488	0.10438954257972244	0.009900990099009901	));
+}
+potential ( YourSuperValuse_NonSplitable | YourSuper_value )
+{
+	data = ((	0.49654521775184507	0.24827260887592253	0.1862044566569369	0.062068152218980634	0.0062068152218980625	6.206815221898064E-4	6.206815221898063E-5	1.999960000799984E-5	)
+		(	6.2040550211677E-6	0.19880493431761134	0.3976098686352127	0.19880493431761134	0.14910370073820103	0.04970123357940134	0.004970123357940134	9.990009990009992E-4	)
+		(	4.8335964177664305E-4	4.83359641776643E-5	0.1261901223163598	0.16825349642181303	0.33650699284362606	0.16825349642181303	0.1261901223163598	0.07407407407407408	)
+		(	0.04711639914815879	0.0047116399148158785	4.711639914815879E-4	0.04518091221219678	0.13554273663658878	0.18072364884879022	0.36144729769758044	0.22480620155038758	)
+		(	0.25614754098360965	0.19211065573770336	0.06403688524590163	0.006403688524590164	0.006403688524590164	0.06403688524590163	0.19211065573770336	0.21875000000000003	)
+		(	0.1976733791947235	0.39534675838945693	0.1976733791947235	0.14825503439604515	0.04941834479868236	5.153535740580864E-4	0.005153535740580864	0.005964214711729623	)
+		(	0.04347539311779013	0.1304261793533704	0.17390157247116053	0.34780314494233106	0.17390157247116053	0.1304261793533704	4.995854681279601E-5	1.599974400409593E-5	)
+		(	0.06802721088435375	0.12244897959183673	0.17687074829931973	0.272108843537415	0.1836734693877551	0.1360544217687075	0.034013605442176874	0.006802721088435374	));
+}
+potential ( TheirSuperValuse_Splitable | TheirSuper_Value )
+{
+	data = ((	0.6104298569528782	0.2078389271326609	0.12470335627959854	0.04156778542653319	0.013855928475511061	0.001385592847551106	1.385592847551106E-4	7.999360051195905E-5	)
+		(	1.374903147381669E-5	0.15722064329823635	0.5403673510160572	0.15722064329823635	0.09433238597894376	0.03144412865964826	0.010481376219882092	0.008919722497522299	)
+		(	0.001059571906034484	1.0595719060344842E-4	0.08347104672795005	0.13911841121325488	0.5198391299001793	0.13911841121325488	0.08347104672795005	0.03381642512077295	)
+		(	0.02842281783816087	0.009474272612720033	9.474272612720035E-4	0.03152746409432934	0.09458239228298494	0.157637320471639	0.44663907466966307	0.23076923076923078	)
+		(	0.2836074872376606	0.17016449234259792	0.05672149744753368	0.0189071658158443	0.0189071658158443	0.05672149744753368	0.17016449234259792	0.22480620155038764	)
+		(	0.1595051579233739	0.45193128078292155	0.1595051579233739	0.09570309475402798	0.0319010315846766	9.586532838668253E-4	0.009586532838668253	0.09090909090909093	)
+		(	0.0280193358980164	0.08405800769404821	0.140096679490077	0.5234945923612597	0.140096679490077	0.08405800769404821	1.0670227213050187E-4	6.999510034297599E-5	)
+		(	0.12244897959183673	0.17687074829931973	0.272108843537415	0.19727891156462585	0.1292517006802721	0.06802721088435375	0.027210884353741496	0.006802721088435374	));
+}
+potential ( Negative_Waste | contributions_Negative )
+{
+	data = ((	0.49209290914893383	0.2795908569170904	0.09878061983654796	0.02795908569170904	0.002795908569170904	0.09878061983654796	)
+		(	0.13964347275861386	0.567301608081866	0.11346032161637318	0.011586044380441089	0.05454823154633263	0.11346032161637318	)
+		(	0.09615384615384616	0.019230769230769232	0.38461538461538464	0.019230769230769232	0.09615384615384616	0.38461538461538464	)
+		(	0.05441288497116198	0.011426705843943733	0.11448470997932025	0.5658940037000787	0.13929698552617512	0.11448470997932025	)
+		(	0.0027959085691709037	0.027959085691709035	0.09878061983654794	0.27959085691709035	0.4920929091489338	0.09878061983654794	)
+		(	0.038461538461538464	0.07692307692307693	0.38461538461538464	0.07692307692307693	0.038461538461538464	0.38461538461538464	));
+}
+potential ( YourProspects_SkillDemand | Employment_YourProspects )
+{
+	data = ((	0.40733197556008066	0.34623217922607064	0.20366598778004033	0.04073319755600807	0.0020366598778004037	)
+		(	0.23076923076923095	0.3846153846153816	0.2884615384615412	0.07692307692307732	0.01923076923076908	)
+		(	0.03448275862069	0.29310344827586	0.3448275862069	0.29310344827586	0.03448275862069	)
+		(	0.019230769230769076	0.0769230769230773	0.28846153846154116	0.38461538461538153	0.23076923076923092	)
+		(	0.0020366598778004032	0.040733197556008065	0.2036659877800403	0.3462321792260706	0.4073319755600806	));
+}
+potential ( Needs_Financial | needs )
+{
+	data = ((	0.3076923076923066	0.276923076923077	0.24615384615384733	0.1384615384615385	0.030769230769230667	)
+		(	0.27142857142857085	0.28571428571429086	0.24285714285714075	0.14285714285714043	0.05714285714285718	)
+		(	0.109375	0.234375	0.3125	0.234375	0.109375	)
+		(	0.05714285714285717	0.1428571428571404	0.2428571428571407	0.2857142857142908	0.2714285714285708	)
+		(	0.030769230769230667	0.1384615384615385	0.24615384615384733	0.276923076923077	0.30769230769230665	));
+}
+potential ( ChildRearing_YourTimeAtWork | homemaker_child_rearing )
+{
+	data = ((	0.2	0.2	0.2	0.2	0.2	)
+		(	0.3333333333333323	0.283333333333332	0.21666666666667153	0.13333333333333094	0.033333333333333236	)
+		(	0.23333333333333212	0.333333333333333	0.2500000000000023	0.1333333333333312	0.05000000000000145	)
+		(	0.10000000000000102	0.23333333333333237	0.3333333333333333	0.23333333333333237	0.10000000000000102	)
+		(	0.05000000000000146	0.13333333333333122	0.2500000000000023	0.333333333333333	0.23333333333333214	)
+		(	0.033333333333333236	0.13333333333333094	0.21666666666667153	0.283333333333332	0.33333333333333237	));
+}
+potential ( YourProspects_Education | Employment_YourProspects )
+{
+	data = ((	0.03333333333333333	0.06666666666666667	0.13333333333333333	0.23333333333333334	0.3	0.23333333333333334	)
+		(	0.03333333333333333	0.06666666666666667	0.13333333333333333	0.23333333333333334	0.26666666666666666	0.26666666666666666	)
+		(	0.06666666666666667	0.1	0.16666666666666666	0.23333333333333334	0.23333333333333334	0.2	)
+		(	0.26666666666666666	0.26666666666666666	0.23333333333333334	0.13333333333333333	0.06666666666666667	0.03333333333333333	)
+		(	0.23333333333333334	0.3	0.23333333333333334	0.13333333333333333	0.06666666666666667	0.03333333333333333	));
+}
+potential ( YourProspects_Pastemployment | Employment_YourProspects )
+{
+	data = ((	0.052631578947368106	0.18421052631579035	0.3157894736842106	0.4473684210526309	)
+		(	0.023809523809523905	0.1428571428571394	0.35714285714285854	0.4761904761904781	)
+		(	0.10344827586206895	0.2068965517241379	0.3448275862068965	0.3448275862068965	)
+		(	0.4761904761904781	0.35714285714285854	0.1428571428571394	0.023809523809523905	)
+		(	0.44736842105263086	0.3157894736842106	0.18421052631579035	0.0526315789473681	));
+}
+potential ( Needs_Health | needs )
+{
+	data = ((	0.38387715930902	0.32629558541267	0.19193857965451	0.095969289827255	0.0019193857965451	)
+		(	0.25000000000000155	0.29411764705882176	0.2647058823529416	0.14705882352941088	0.04411764705882426	)
+		(	0.13888888888889	0.22222222222222	0.27777777777778	0.22222222222222	0.13888888888889	)
+		(	0.04411764705882426	0.14705882352941088	0.2647058823529416	0.29411764705882176	0.2500000000000015	)
+		(	0.0019193857965451	0.095969289827255	0.19193857965451	0.32629558541267	0.38387715930902	));
+}
+potential ( YourFullTimeWork_Care | Employment_YourFullTimeWork )
+{
+	data = ((	0.05	0.5	0.45	)
+		(	0.97	0.012	0.018	));
+}
+potential ( Financial_Employment | Needs_Financial )
+{
+	data = ((	0.4535147392290213	0.340136054421771	0.15873015873016047	0.04535147392290213	0.0022675736961451066	)
+		(	0.22598870056497117	0.37664783427495196	0.2824858757062114	0.11299435028249058	0.0018832391713748096	)
+		(	0.00199203187251002	0.298804780876493	0.398406374501994	0.298804780876493	0.00199203187251002	)
+		(	0.0018832391713748098	0.11299435028249058	0.2824858757062115	0.37664783427495196	0.22598870056497117	)
+		(	0.0022675736961451066	0.04535147392290213	0.15873015873016047	0.340136054421771	0.45351473922902136	));
+}
+potential ( Dependent_SupportRequired | Needs_Dependents )
+{
+	data = ((	0.2	0.2	0.2	0.2	0.2	)
+		(	0.5102040816326543	0.3061224489795926	0.12755102040816108	0.05102040816326543	0.005102040816326543	)
+		(	0.28169014084506855	0.4694835680751176	0.18779342723004902	0.05633802816901372	0.0046948356807511755	)
+		(	0.045454545454545	0.22727272727273	0.45454545454545	0.22727272727273	0.045454545454545	)
+		(	0.0046948356807511755	0.05633802816901372	0.18779342723004902	0.4694835680751176	0.28169014084506855	)
+		(	0.005102040816326543	0.05102040816326544	0.12755102040816108	0.3061224489795926	0.5102040816326543	));
+}
+potential ( ChildRearing_YourTimeWithKids | homemaker_child_rearing )
+{
+	data = ((	0.2	0.2	0.2	0.2	0.2	)
+		(	0.333333333333331	0.26666666666667077	0.20000000000000062	0.1333333333333304	0.0666666666666672	)
+		(	0.23333333333333162	0.3333333333333323	0.2666666666666718	0.13333333333333092	0.03333333333333323	)
+		(	0.06666666666666674	0.26666666666666894	0.33333333333332865	0.26666666666666894	0.06666666666666674	)
+		(	0.033333333333333236	0.13333333333333094	0.2666666666666719	0.3333333333333323	0.23333333333333167	)
+		(	0.06666666666666721	0.13333333333333042	0.20000000000000062	0.2666666666666708	0.33333333333333104	));
+}
+potential ( Salary_TheirWork | Main_Salary )
+{
+	data = ((	0.02439024390243903	0.14634146341463017	0.34146341463415036	0.48780487804878053	)
+		(	0.125	0.20833333333333	0.25	0.41666666666667	)
+		(	0.23728813559322	0.33898305084746	0.1864406779661	0.23728813559322	)
+		(	0.35714285714285643	0.35714285714285643	0.17857142857142821	0.10714285714285893	)
+		(	0.46511627906976627	0.3255813953488374	0.1860465116279085	0.023255813953487813	));
+}
+potential ( Salary_YourSalary | Main_Salary )
+{
+	data = ((	1.2223444566679016E-4	0.017112822393350022	0.08556411196675211	0.13445789023347016	0.20168683535020024	0.26158171372693034	0.2994743918836304	)
+		(	0.001022516801587099	0.051125840079353946	0.12270201619044986	0.1840530242856698	0.24376800549835972	0.19871542441236978	0.19861317273220977	)
+		(	0.075	0.1125	0.1875	0.25	0.1875	0.1125	0.075	)
+		(	0.1968020719062092	0.19690339118041922	0.24154514973286903	0.18237469359024927	0.12158312906016952	0.0506596371084028	0.01013192742168096	)
+		(	0.3041589075108635	0.26567349472377305	0.20484171322160236	0.13656114214773157	0.086902545003106	0.00173805090006212	1.2414649286158144E-4	));
+}
+potential ( Super_TheirValue | Main_Superannuation )
+{
+	data = ((	0.2383720930232596	0.2383720930232596	0.09883720930232483	0.09883720930232483	0.08720930232557983	0.08720930232557983	0.07558139534883586	0.07558139534883586	)
+		(	0.09883720930232483	0.2383720930232596	0.2383720930232596	0.09883720930232483	0.08720930232557983	0.08720930232557983	0.07558139534883586	0.07558139534883586	)
+		(	0.07558139534883584	0.08720930232557982	0.0988372093023248	0.23837209302325954	0.23837209302325954	0.0988372093023248	0.08720930232557982	0.07558139534883584	)
+		(	0.07558139534883584	0.07558139534883584	0.08720930232557982	0.08720930232557982	0.0988372093023248	0.23837209302325954	0.23837209302325954	0.0988372093023248	)
+		(	0.07558139534883584	0.07558139534883584	0.08720930232557982	0.08720930232557982	0.0988372093023248	0.0988372093023248	0.23837209302325954	0.23837209302325954	));
+}
+potential ( Financial_Salary | Needs_Financial )
+{
+	data = ((	0.36363636363636187	0.27272727272727143	0.18181818181818094	0.12727272727273067	0.05454545454545528	)
+		(	0.2222222222222191	0.3703703703703685	0.18518518518518925	0.14814814814814942	0.07407407407407371	)
+		(	0.08333333333333333	0.250000000000001	0.3333333333333313	0.250000000000001	0.08333333333333333	)
+		(	0.07407407407407371	0.14814814814814942	0.18518518518518925	0.3703703703703685	0.2222222222222191	)
+		(	0.05454545454545528	0.12727272727273065	0.1818181818181809	0.2727272727272714	0.3636363636363618	));
+}

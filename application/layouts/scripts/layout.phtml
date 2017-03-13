@@ -1,0 +1,83 @@
+<!-- application/layouts/scripts/layout.phtml -->
+<?php echo $this->doctype() ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <?php $this->headTitle()->setDefaultAttachOrder( "PREPEND" ); ?>
+      <?php echo $this->headTitle( "ReConsider" ); ?>
+      <?php $this->headLink( array('rel' => 'favicon', 'href' => '/images/favicon.ico'),'PREPEND' ); ?>
+      <?php $this->headLink()->appendStylesheet('/css/global.css'); ?>
+      <?php $this->headLink()->appendStylesheet('/css/sdmenu.css'); ?>
+      <?php $this->headScript()->appendFile('/javascript/sdmenu.js'); ?>
+      <?php $this->headScript()->appendFile('/javascript/sdmenu-config.js'); ?>
+      <?php $this->headLink()->appendStylesheet('/css/submenu.css'); ?>
+      <?php echo $this->headScript(); ?>
+      <?php echo $this->headLink(); ?>
+      <base href="<?php echo $this->baseUrl(); ?>" />
+   </head>
+   <?php $jrSession = new Zend_Session_Namespace("auth"); ?>
+   <body <?php echo $this->layout()->bodyScripts ?>>
+   <div id="header" class='headder-shadow'>
+      <div id="header-logo" >
+         <b>ReConsider</b>
+      </div>
+      <div id="header-log">
+         <?php echo $this->loggedInAs(); ?>
+      </div>
+   </div>
+   <div id="body" >
+      <div id="navigation" >
+         <div id="mainMenue" >
+            <ul id="menu" class='headder-shadow'>
+               <?php foreach( $this->Navigation() as $link ): ?>
+                  <?php if( $this->CurrentPage( $link['url'] ) == true ): ?>
+                     <li id='current-page'>
+                  <?php else: ?>
+                     <li>
+                  <?php endif; ?>
+                        <a <?php echo $link['class']; ?> 
+                           href="<?php echo $this->ShUrl( $link['url'][0] ); ?>"
+                          ><?php echo $link['text']; ?></a>
+                     </li>
+              <?php endforeach; ?>
+            </ul>
+         </div>
+         <?php if( isset( $this->subMenus ) ): ?>
+            <div id='submenu' class='sdmenu'>
+            <h3 class='title'>Jump To</h3> 
+            <?php foreach( $this->subMenus as $subMenu ): ?>
+               <div class='collapsed' >
+                  <span id='<?php echo $subMenu['id'];?>'><?php echo $subMenu['title']; ?></span>
+                  <p class='links'>
+                     <?php foreach( $subMenu['items'] as $lable=>$link ): ?>
+                        <a href="<?php echo $this->Url( $link['url'] ) . '#' . $link['anchor']; ?>"><?php echo $lable; ?></a>
+                     <?php endforeach; ?>
+                  </p>
+               </div>
+               <?php endforeach; ?>
+            </div> 
+         <?php endif; ?>
+         <?php if( isset( $this->auxMenu ) ): ?>
+         <div id='auxMenu'>
+            <ul>
+            <?php foreach( $this->auxMenu as $item ): ?>
+               <li>
+               <?php echo $item; ?>
+               </li>
+            <?php endforeach;?>
+            </ul>
+         </div>
+         <?php endif; ?>
+      </div>
+      <div id="main" class='shadow'>
+           
+         <?php echo $this->layout()->content ?>
+       
+         <div id='bottom-banner'>
+            <a href='<?php echo $this->ShUrl( "Privacy-Statement" ); ?>'>Privacy Statement</a> |
+            <a href='<?php echo $this->ShUrl( "Contact-Us" ); ?>'>Contact Us</a>
+         </div>    
+      </div>
+   </div>
+   </body>
+</html>

@@ -1,0 +1,14 @@
+<?php $this->headTitle(': Sign Up'); ?>
+<?php $this->headLink()->appendStylesheet('/css/general.css') ?>
+
+<?php $newuser_href =  $this->url( array('controller'=>'auth', 'action' => 'create-account' ),'default', true ) ?>
+
+
+<div id="view-content">
+   <h2 id='title'>Sign Up</h2>
+   <div id='page-content'>
+      New user? create an account <a href="<?php echo $newuser_href; ?>">here</a>.
+   </div>
+</div>
+
+

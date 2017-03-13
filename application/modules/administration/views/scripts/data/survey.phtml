@@ -1,0 +1,17 @@
+<?php $this->headLink()->appendStylesheet('/css/general.css') ?>
+<?php $this->headLink()->appendStylesheet( '/css/admin.css' ); ?>
+<?php $this->headTitle(': Survey Data'); ?>
+<?php $this->headLink()->appendStylesheet( '/javascript/fancybox/jquery.fancybox-1.3.4.css' ); ?>
+<?php $this->headScript()->appendFile( '/javascript/jquery-1.4.3.min.js' ); ?>
+<?php $this->headScript()->appendFile( '/javascript/fancybox/jquery.easing-1.4.pack.js' ); ?>
+<?php $this->headScript()->appendFile( '/javascript/fancybox/jquery.fancybox-1.3.4.pack.js' ); ?>
+
+<div id="view-content">
+   <h2 id='title'>User Management</h2>
+   <div id="page-content">
+   <?php Zend_Debug::Dump( $this->data ); ?>
+   <?php /* 
+   <?php print_r( $this->questions ); ?>
+   */?>
+   </div>
+</div>

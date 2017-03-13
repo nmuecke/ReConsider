@@ -1,0 +1,37 @@
+<?php $this->headTitle(': Leave Study'); ?>
+<?php $this->headLink()->appendStylesheet('/css/general.css') ?>
+
+
+
+<div id="view-content">
+   <div id='page-content'>
+   <h2 id='title'>Revocation of Consent From</h2>
+   <h4>TO: Deakin and University of Ballarat students</h4>
+   <h4>Date: 22nd June 2011</h4>
+   <h4>Full Project Title: Assessing the suitability of a new Online Dispute
+       Resolution architecture for the settlement of Electronic Health Record
+       disputes; an emotional intelligence and organisational security
+       approach.
+   </h4>
+   <div class='center'>
+      <h4>Reference Number: BL-EC 41-11</h4>
+   </div>
+   <p> 
+    I hereby wish to WITHDRAW my consent to participate in the above
+    research project and understand that such withdrawal WILL NOT
+    jeopardise my relationship with Deakin University and the University of
+    Ballarat.
+   </p>
+
+   <div class='center'>
+   <?php      
+   $this->form->setAction($this->url());
+   echo $this->form;
+   ?>
+   </div>
+ 
+
+   </div>
+</div>
+
+

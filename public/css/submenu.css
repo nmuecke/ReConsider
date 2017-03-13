@@ -1,0 +1,65 @@
+#submenu div{
+   box-shadow: 2px 4px 4px #EEEEEE;
+   -webkit-box-shadow: 2px 4px 4px #EEEEEE;
+   -moz-box-shadow: 2px 4px 4px #EEEEEE;
+   filter: progid:DXImageTransform.Microsoft.dropShadow(color=#EEEEEE, offX=2, offY=4, positive=true);
+
+   }
+
+#submenu-unclaimed-nodes {
+   background-color: #D4D4E7;
+   }
+
+#submenu-agreed-nodes {
+   background-color: #86DF85;
+   }
+
+#submenu-disagreed-nodes {
+   background-color: #FFEE80;
+   }
+
+#submenu-disputed-nodes {
+   background-color: #FF7E7E;
+   }
+
+#submenu-asserted-nodes {
+   background-color:  #B8D5FF;
+   }
+
+#submenu-pending_review-nodes {
+   background-color:  #3E399C;
+   color: #FEC92B; 
+   background-color: #FEC92B;
+   color: #3E399C;
+   }
+
+#submenu-pending_review-nodes:hover {
+   background-color: #FED152;
+   cursor: pointer;
+   }
+
+#submenu-unclaimed-nodes:hover {
+   background-color: #E2E2F6;
+   cursor: pointer;
+   }
+
+#submenu-agreed-nodes:hover {
+   background-color: #96FA95;
+   cursor: pointer;
+   }
+
+#submenu-disagreed-nodes:hover {
+   background-color: #FFF5BC;
+   cursor: pointer;
+   }
+
+#submenu-disputed-nodes:hover {
+   background-color: #FFA3A3;
+   cursor: pointer;
+   }
+
+#submenu-asserted-nodes:hover {
+   background-color:  #D0E4FF;
+   cursor: pointer;
+   }
+

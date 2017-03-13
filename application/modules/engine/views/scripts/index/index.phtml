@@ -1,0 +1,17 @@
+<?php $this->headLink()->appendStylesheet('/css/general.css') ?>
+<?php $this->headTitle(': Home'); ?>
+
+<div id="view-content">
+   <h2 id='title'>Welcome to ReConsider</h2>
+   <div id="page-content">
+      <p>New user? create an account
+         <a href="<?php echo $this->url( array('controller'=>'auth', 
+                                               'action' => 'create-account' ),
+                                        'default',
+                                         true ) ?>">create an account</a>.</p>
+      <p>Returning user 
+         <a href="<?php echo $this->url( array('controller'=>'auth' ),
+                                               'default',
+                                                true ) ?>">log in</a>.</p>
+   </div>
+</div>

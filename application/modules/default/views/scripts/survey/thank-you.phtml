@@ -1,0 +1,25 @@
+﻿<?php $this->headTitle(': Thank You'); ?>
+<?php $this->headLink()->appendStylesheet('/css/general.css') ?>
+<?php $this->headLink()->appendStylesheet('/css/survey.css') ?>
+
+<?php $href_disputes = $this->url( array( 'controller' => 'disputes',
+                                          'action'     => 'index',
+                                          'module'     => 'default',
+                                          )); ?>
+
+<div id="view-content">
+   <div id='page-content'>
+   <h2 id='title'>Thank for answering our questions</h2>
+   <p>
+   The results from your participation will help further ODR research and our 
+   understanding of the role emotional intelligence play in dispute resolution.
+   </p>
+   <p>
+   You may now take the Emotional Inteligence test. A link to the test, as well
+   additiona information about the test can be found <a href='<?php echo $href_disputes; ?>' >here</a>.
+   </p> 
+
+   </div>
+</div>
+
+

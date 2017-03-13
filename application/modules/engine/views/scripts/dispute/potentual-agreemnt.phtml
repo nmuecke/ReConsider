@@ -1,0 +1,18 @@
+<?php $this->headTitle(': Potentual-Agreemnt'); ?>
+<?php $this->headLink()->appendStylesheet('/css/general.css') ?>
+
+
+<div id="view-content">
+
+<?php
+   $nodeViewer = new Engine_Node_View_ResolutionHelper( $this->rootnode, $this->url(), 1 );
+
+   echo $nodeViewer->view();
+
+?>
+ <h2 id='title'> <?php echo $this->rootnode->getTitle(); ?> </h2>
+   <div id='page-content' class='center'>
+      <?php echo $this->rootnode->getPrefix() . ' ' . $this->rootnode->getRecomendedOutcome()->getValue(); ?>
+      <?php echo $this->form->setAction($this->url()); ?>
+   </div>
+</div>

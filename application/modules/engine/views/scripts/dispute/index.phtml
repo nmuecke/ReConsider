@@ -1,0 +1,30 @@
+<?php $this->headTitle(': Current Dispute'); ?>
+<?php $this->headLink()->appendStylesheet('/css/general.css') ?>
+<?php $this->headLink()->appendStylesheet('/css/node.css') ?>
+<?php $this->headLink()->appendStylesheet( '/javascript/fancybox/jquery.fancybox-1.3.4.css' ); ?>
+<?php $this->headScript()->appendFile( '/javascript/jquery-1.4.3.min.js' ); ?>
+<?php $this->headScript()->appendFile( '/javascript/fancybox/jquery.easing-1.4.pack.js' ); ?>
+<?php $this->headScript()->appendFile( '/javascript/fancybox/jquery.fancybox-1.3.4.pack.js' ); ?>
+<?php $this->headScript()->appendFile( '/javascript/refreshPage.js' ); ?>
+<?php $timeout = 10 * 1000 * 60; // change the fist number for the number of minutes ?>
+
+<div id="view-content">
+<h2 id='title'>Issues in the Dispute</h2>
+<script>confirmRefresh(<?php echo $timeout; ?>, '<?php echo $this->url(); ?>' );</script>
+<?php
+   //$nodeViewer = new Engine_Node_View_Helper( "Engine_Node_View_Div", $this->url() );A
+   $this->auxMenu = array();    
+   $this->auxMenu[] = $this->exitForm->setAction($this->url());
+
+   $options = array();
+   $nodeViewer = new Engine_Node_View_FancyBoxHelper( "Engine_Node_View_Div", $this->url(), $options );
+   $nodeViewer->setViewRootnode( false );
+   
+   //echo $this->exitForm->setAction($this->url());
+
+   echo $nodeViewer->viewNodeTree( $this->rootnode );
+   $this->headScript()->appendScript( $nodeViewer->getJaveScript() );
+
+?>
+<div class='center'> <?php echo $this->exitForm->setAction($this->url()); ?> </div>
+</div>

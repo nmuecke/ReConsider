@@ -1,0 +1,265 @@
+net
+{
+	huginenginegenerator3061656038650325130L = "edu.ucla.belief.inference.JoinTreeSettings@1aa632be";
+}
+
+node com_rootnode
+{
+	states = ("completely inadequate." "good." "excellent." "very good." "slightly inadequate." "not the best, yet, acceptable." "inadequate." );
+	position = (200 340);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Communications between Doctor and Patient";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node com_d_content
+{
+	states = ("completely inadequate." "inadequate." "slightly inadequate." "not the best, yet, acceptable." "good." "very good." "excellent." );
+	position = (570 200);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Content of communications made by the Doctor";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node com_d_quantity
+{
+	states = ("too much to take in." "too little to draw any conclusions from." "too little to act on." "sufficient to act on." "more than sufficient to act on." );
+	position = (1090 20);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Amount of information provided by the Doctor";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node com_d_literacy
+{
+	states = ("completely inadequate." "inadequate." "slightly inadequate." "not the best, yet, acceptable." "good." "very good." "excellent." );
+	position = (1090 170);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Doctor's explanation of medical terminology";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node com_d_detail
+{
+	states = ("completely inadequate." "inadequate." "slightly inadequate." "not the best, yet, acceptable." "good." "very good." "excellent." );
+	position = (1090 310);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Level of detail provided by the Doctor";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node com_d_validity
+{
+	states = ("completely inadequate." "inadequate." "slightly inadequate." "not the best, yet, acceptable." "good." "very good." "excellent." );
+	position = (1090 460);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Validity of information provided by the Doctor";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node com_p_expectations
+{
+	states = ("completely unfulfilled." "unfulfilled." "partially unfulfilled." "neither fulfilled nor unfulfilled." "partially fulfilled." "fulfilled." "completely fulfilled." );
+	position = (570 990);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Expectations held by the Patient";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node com_d_expectations
+{
+	states = ("completely unfulfilled." "unfulfilled." "partially unfulfilled." "neither fulfilled nor unfulfilled." "partially fulfilled." "fulfilled." "completely fulfilled." );
+	position = (560 1230);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Expectations held by the Doctor";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node com_p_delivery
+{
+	states = ("extremely obstructive." "obstructive." "hindering." "neither hindering nor beneficial." "beneficial." "helpful." "extremely helpful." );
+	position = (550 2000);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "The manner used by the Patient to communicate";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node com_p_courteousy
+{
+	states = ("completely inadequate." "inadequate." "slightly inadequate." "not the best, yet, acceptable." "good." "very good." "quite excellent." );
+	position = (1090 1860);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Patient's courtesy and respect";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node com_p_clarity
+{
+	states = ("extremely difficult." "difficult." "slightly difficult." "neither difficult nor easy." "slightly easy." "easy." "extremely easy." );
+	position = (1080 2160);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Clarity of Patients communications";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node com_p_sensitivity
+{
+	states = ("totally insensitive." "insensitive." "could have been more sensitive." "sensitive." "very sensitive." "exceptionally sensitive." "to sensitive and/or smothering." );
+	position = (1090 2000);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Sensitivity the Patient showed";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node com_p_feelings
+{
+	states = ("completely unsympathetic. " "unsympathetic. " "slight unsympathetic." "impartial." "slightly sympathetic." "sympathetic. " "completely sympathetic. " );
+	position = (1590 2130);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Sensitivity towards feeling showed by the Patient";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node com_p_cultural
+{
+	states = ("completely unsympathetic. " "unsympathetic. " "slight unsympathetic." "impartial." "slightly sympathetic. " "sympathetic. " "completely sympathetic. " );
+	position = (1580 1940);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Cultural sensitivity showed by the Patient";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node com_p_content
+{
+	states = ("completely inadequate." "inadequate." "slightly inadequate." "not the best, yet, acceptable." "good." "very good." "excellent." );
+	position = (560 1440);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Content of communications made by the Patient";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node com_p_detail
+{
+	states = ("completely inadequate." "inadequate." "slightly inadequate." "not the best, yet, acceptable." "good." "very good." "excellent." );
+	position = (1090 1700);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Level of detail provided by the Patient";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node com_p_quantity
+{
+	states = ("to much to take in." "too little to draw any conclusions from." "too little to act on." "sufficient to act on." "more than sufficient to act on." );
+	position = (1080 1250);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Amount of information provided by the Patient";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node com_p_literacy
+{
+	states = ("totally insufficient." "insufficient." "partially insufficient." "neither insufficient not sufficient." "mostly sufficient." "sufficient." "more than sufficient." );
+	position = (1080 1400);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Patient's understanding of medical terminology";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node com_p_validity
+{
+	states = ("completely inadequate." "inadequate." "slightly inadequate." "not the best, yet, acceptable." "good." "very good." "excellent." );
+	position = (1080 1540);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Validity of information provided by the Patient";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node com_d_delivery
+{
+	states = ("extremely obstructive." "obstructive." "hindering." "neither hindering nor beneficial." "beneficial." "helpful." "extremely helpful." );
+	position = (570 830);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "The manner used by the Doctor to communicate";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node com_d_clarity
+{
+	states = ("extremely difficult." "difficult." "slightly difficult." "neither difficult nor easy." "slightly easy," "easy." "extremely easy." );
+	position = (1090 990);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Clarity of Doctors communications";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node com_d_sensitivity
+{
+	states = ("totally insensitive." "insensitive." "could have been more sensitive." "sensitive." "very sensitive." "exceptionally sensitive." "to sensitive and/or smothering." );
+	position = (1090 830);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Sensitivity the Doctor showed";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node com_d_feelings
+{
+	states = ("completely unsympathetic. " "unsympathetic. " "slight unsympathetic." "impartial." "slightly sympathetic. " "sympathetic. " "completely sympathetic. " );
+	position = (1548 1003);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Sensitivity towards feeling showed by the Doctor";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node com_d_situation
+{
+	states = ("completely unsympathetic. " "unsympathetic. " "slight unsympathetic." "impartial." "slightly sympathetic. " "sympathetic. " "completely sympathetic.  " );
+	position = (1560 830);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Situational sensitivity showed by the Doctor";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node com_d_cultural
+{
+	states = ("completely unsympathetic. " "unsympathetic. " "slight unsympathetic." "impartial." "slightly sympathetic. " "sympathetic. " "completely sympathetic. " );
+	position = (1550 680);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Cultural sensitivity showed by the Doctor";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}
+node com_d_courteousy
+{
+	states = ("completely inadequate." "inadequate." "slightly inadequate." "not the best, yet, acceptable." "good." "very good." "excellent." );
+	position = (1090 650);
+	excludepolicy = "include whole CPT";
+	ismapvariable = "false";
+	label = "Doctor's courtesy and respect";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	diagnosistype = "AUXILIARY";
+}

@@ -1,0 +1,26 @@
+<?php $this->headLink()->appendStylesheet('/css/general.css') ?>
+<?php $this->headLink()->appendStylesheet( '/css/admin.css' ); ?>
+<?php $this->headLink()->appendStylesheet( '/css/data.css' ); ?>
+<?php $this->headTitle(': Dispute Data'); ?>
+<?php $this->headLink()->appendStylesheet( '/javascript/fancybox/jquery.fancybox-1.3.4.css' ); ?>
+<?php $this->headScript()->appendFile( '/javascript/jquery-1.4.3.min.js' ); ?>
+<?php $this->headScript()->appendFile( '/javascript/fancybox/jquery.easing-1.4.pack.js' ); ?>
+<?php $this->headScript()->appendFile( '/javascript/fancybox/jquery.fancybox-1.3.4.pack.js' ); ?>
+<?php $this->addHelperPath('Extend/Struct/View/Helper', 'Extend_Struct_View_Helper'); ?>
+<?php $dataonly_ref = $this->url( array('module'     => 'administration',
+                                        'controller' => 'data',
+                                        'action'     => 'dispute-results-data-only' ),
+                                        'default',
+                                         true ) ?>
+<div id="view-content">
+   <h2 id='title'>Dispute data to view</h2>
+   <div id="page-content">
+   <dl>
+   <?php echo $this->DisputeList( $this->disputes ); ?>
+   </dl>
+   <?php /*
+   <?php Zend_Debug::Dump( $this->disputes ); ?>
+   <?php echo $this->HtmlTable( $this->data ); ?>
+   */ ?>
+   </div>
+</div>

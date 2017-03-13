@@ -1,0 +1,82 @@
+<?php $this->headLink()->appendStylesheet('/css/general.css') ?>
+<?php $this->headLink()->appendStylesheet( '/css/admin.css' ); ?>
+<?php $this->headTitle(': User Management'); ?>
+<?php $this->headLink()->appendStylesheet( '/javascript/fancybox/jquery.fancybox-1.3.4.css' ); ?>
+<?php $this->headScript()->appendFile( '/javascript/jquery-1.4.3.min.js' ); ?>
+<?php $this->headScript()->appendFile( '/javascript/fancybox/jquery.easing-1.4.pack.js' ); ?>
+<?php $this->headScript()->appendFile( '/javascript/fancybox/jquery.fancybox-1.3.4.pack.js' ); ?>
+<?php $eiOptions = array( 'null'=>'Incompleat', true => 'Compleat' ); ?>
+
+<div id="view-content">
+   <h2 id='title'>User Management</h2>
+   <div id="page-content">
+   <form action='<?php echo $this->url(); ?>' name='updateAcconts' id='<?php echo $this->validationID; ?>' method='post' >
+   <table id='admin-table'>
+   <tr class='top-tr'>
+      <th>Modify</th>
+      <th>User ID</th>
+      <th>Pseudonym</th>
+      <th>Gender</th>
+      <th>Uni</th>
+      <th>Completed EI</th>
+      <th>Completed Qs</th>
+      <th>Scenario Role</th>
+      <th>Dispute ID</th>
+      <th>Assign Dispute</th>
+   </tr>
+   <?php foreach( $this->users as $user ): ?>
+   <?php $role = $this->RoleConverter( $user['role'] ); ?> 
+   <?php if( $user['disputeID'] == null ) { $user['disputeID'] = 'NA'; } ?>
+   <tr class='data-tr'>
+      <td><?php if( $user['emailIsValid'] == '0'): ?>
+          Unvalidated
+          <?php elseif( $user['disputeID'] == 'NA' || $user['eiTest'] != true ): ?>
+          <input type="checkbox" 
+                 name='userToUpdate[]' 
+                 value='<?php echo $user['id']; ?>' />
+          <?php else: ?>
+          NA
+          <?php endif; ?>
+      </td>
+      <td><?php echo $user['id']; ?></td>
+      <td><?php echo $user['firstName'] . ' ' . $user['lastName']; ?></td>
+      <td><?php echo $user['gender']; ?></td>
+      <td><?php echo $user['uni']; ?></td>
+      <td><?php if( $user['disputeID'] != 'NA' && $user['takenSurvey'] == true && $user['eiTest'] == true ): ?>
+          <?php $href = $this->url( array( 'module'    => 'administration',
+                                           'controller' => 'contact-user',
+                                           'action'    => 'index',
+                                           'template'  => 'eiTestResults',
+                                           'to'        => $user['id']
+                                          ) );?>
+          <a href='<?php echo $href; ?>' class='a-button'>Email Results</a>
+          <?php elseif( $user['takenSurvey'] == true ): ?>
+          <?php echo $this->DropBox( $eiOptions, $user['eiTest'], "eiTest_" . $user['id'] ); ?>
+          <?php else: ?>
+          NA
+          <?php endif;?></td>
+      <td><?php echo $user['takenSurvey']? 'yes': 'no'; ?></td>
+      <td><?php echo $role; ?></td>
+      <td><?php echo $user['disputeID']; ?></td>
+      <?php if($user['disputeID'] == 'NA'): ?>
+      <td><input type="checkbox" name='assignDispute[]' value='<?php echo $user['id']; ?>' /> </td>
+      <?php else: ?>
+      <td><?php echo $user['status']; ?></td> 
+      <?php endif; ?>
+   </tr>
+   <?php endforeach; ?>
+   <tr class='bottom-tr'>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th><button type="submit" name='updateEI' value="Update" />Update EI</button></th>
+      <th></th>
+      <th></th>
+      <th><button type="submit" name='updateDispute' value="updateDispute" />Assign Dispute(s)</button></th>
+   </tr>
+   </table>
+   <form>
+   </div>
+</div>

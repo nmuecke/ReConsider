@@ -1,0 +1,30 @@
+<?php $this->headTitle(': Current Dispute'); ?>
+<?php $this->headLink()->appendStylesheet('/css/general.css') ?>
+<?php $this->headLink()->appendStylesheet('/css/node.css') ?>
+<?php $this->headLink()->appendStylesheet( '/javascript/fancybox/jquery.fancybox-1.3.4.css' ); ?>
+<?php $this->headScript()->appendFile( '/javascript/jquery-1.4.3.min.js' ); ?>
+<?php $this->headScript()->appendFile( '/javascript/fancybox/jquery.easing-1.4.pack.js' ); ?>
+<?php $this->headScript()->appendFile( '/javascript/fancybox/jquery.fancybox-1.3.4.pack.js' ); ?>
+
+<div id="view-content">
+<h2 id='title'>Summary of dispute findings</h2>
+<?php
+   //$nodeViewer = new Engine_Node_View_Helper( "Engine_Node_View_Div", $this->url() );
+   $this->auxMenu = array();
+   $this->auxMenu[] = $this->exitForm->setAction($this->url());
+
+
+   $options = array();
+   $nodeViewer = new Engine_Node_View_FancyBoxSummaryHelper( "Engine_Node_View_DivSummary", $this->url(), $options );
+   $nodeViewer->setViewRootnode( true )
+              ->setDefaultButtonLabel( "View" )
+              ->setDefaultClaimIndicator( "The outcome for this issue was found to be: " );
+   
+//   echo $this->exitForm->setAction($this->url());
+
+   echo $nodeViewer->viewNodeTree( $this->rootnode );
+   $this->headScript()->appendScript( $nodeViewer->getJaveScript() );
+
+?>
+<div class='center'><?php echo $this->exitForm->setAction($this->url()); ?> </div>
+</div>

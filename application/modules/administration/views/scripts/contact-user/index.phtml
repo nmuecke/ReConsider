@@ -1,0 +1,16 @@
+
+<?php $this->headLink()->appendStylesheet('/css/general.css'); ?>
+<?php $this->headLink()->appendStylesheet('/css/forms.css'); ?>
+<?php $this->headLink()->appendStylesheet( '/css/admin.css' ); ?>
+<?php $this->headTitle( ": Contact User" ); ?>
+
+<div id="view-content">
+   <div id='page-content'>
+   <h2 id='title'>Email User</h2>
+   <?php
+   $this->form->setAction($this->url());
+   echo $this->form;
+   ?>
+   </div>
+</div>
+

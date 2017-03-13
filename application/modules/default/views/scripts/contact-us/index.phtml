@@ -1,0 +1,53 @@
+<?php $this->headLink()->appendStylesheet('/css/general.css') ?>
+<?php $this->headTitle(': Contact Us'); ?>
+
+<div id="view-content">
+   <h2 id='title'>Contact Us</h2>
+   <div id='page-content'>
+      <h2>Contact details of the researchers:</h2>
+<?php echo $this->Contact( "Dr. Emilla Bellucci",
+                            array( "E-Mail:" => "emilla.bellucci@deakin.edu.au" ),
+                            array( "Office phone number:" => "9244 6273" ),
+                            array( "Address:"  => "Office LB 4.310.",
+                                   "_Address1" => "Burwood Campus, Deakin Unversity.",
+                                   "_Address2" => "221 Burwood Highway, Burwood,",
+                                   "_Address3" => "Victoria, 3125" )          
+                          );
+      echo $this->Contact( "Assoc Prof Andrew Stranieri.",
+                            array( "E-Mail:" => "a.stranieri@ballarat.edu.au" ),
+                            array( "Office phone number:" => "5327 9283" ),
+                            array( "Address:"  => "Office N3/3.",
+                                   "_Address1" => "Mt. Helen’s Campus.",
+                                   "_Address2" => "University of Ballarat.",
+                                   "_Address3" => "PO Box: 663, Ballarat,",
+                                   "_Address4" => "Victoria, 3352" ) 
+                          );
+?>
+      <h2>Reporting a System Issue or Bug</h2>
+<?php echo $this->Contact( "System Admin",
+                           array( "E-Mail:"=> Zend_Registry::get( 'contacts' )->sys_errormail ),
+                           array(),
+                           array(),
+                           array( "Please quote:" => "<i>'ReConsider System Error'</i>",
+                                  "_other1"       => "Please also remember to provide as much detail about the error as possible" )
+                          );
+?>
+<h2>Complaints</h2>
+<p>
+If you have any complaints about any aspect of the project, the way it is being conducted or any 
+questions about your rights as a research participant, then you may contact:  
+<?php echo $this->Contact( "The Manager, Office of Research Integrity",
+                            array( "E-Mail:" => "research-ethics@deakin.edu.au" ),
+                            array( "Telephone:" => "9251 7129",
+                                   "Fax:"       => "9244 6581" ),
+                            array( "Address:"  => "Office of Research Integrity",
+                                   "_Address1" => "Burwood Campus, Deakin Unversity.",
+                                   "_Address2" => "221 Burwood Highway, Burwood,",
+                                   "_Address3" => "Victoria, 3125" ),
+                            array( "<i>Please quote project number BL-EC 41-11.</i>"=>"" )
+                          );
+?>
+
+      </dl>
+   </div>
+</div>

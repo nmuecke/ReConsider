@@ -1,0 +1,162 @@
+<?php $this->headLink()->appendStylesheet('/css/general.css') ?>
+<?php $this->headTitle( '' ); ?>
+<?php $topLink = "<a class='a-button' href='" . $this->url() ."/#top' >up</a>"; ?>
+<div id="view-content">
+   <h2 id='title'>Help<a name='top'></a></h2>
+   <div id='page-content'>
+   <h4 class='sub-title'>Page Content:</h4>
+   <dl>
+      <dt><a href='<?php echo $this->url(); ?>/#start_study'>Participateing in the study</a></dt>
+      <dt><a href='<?php echo $this->url(); ?>/#creat_account'>Creating an account</a></dt>
+      <dt><a href='<?php echo $this->url(); ?>/#ei_test'>The emotional intelligence test</a></dt>
+      <dt><a href='<?php echo $this->url(); ?>/#dispute_role'>Your role in the dispute</a></dt>
+      <dt><a href='<?php echo $this->url(); ?>/#dispute_engage'>Entering into the dispute</a></dt>
+      <dt><a href='<?php echo $this->url(); ?>/#dispute_claims'>Interacting with the dispute</a></dt>
+      <dt><a href='<?php echo $this->url(); ?>/#dispute_end'>Ending the dispute</a></dt>
+      <dt><a href='<?php echo $this->url(); ?>/#dispute_finished'>Once the dispute is resolved</a></dt>
+   </dl>  
+   <div id='dispute-help'> 
+   <h4 class='sub-title'><a name='start_study'></a>Participateing in the study<span><?php echo $topLink; ?></span></h4>
+   <p>
+   To participate in this study you will need to create and account on the ReConsider Online 
+   Dispute Resolutions (ODR) System. 
+   </p>
+   <h4 class='sub-title'><a name='Creating an account'></a>Creating an account<span><?php echo $topLink; ?></span></h4>
+   <p>
+   To create an account, click on the "create an account" 
+   link and follow the prompts. Please make sure to carefully read the plain language statement 
+   and informed consent before agreeing to participate in the study.
+   </p>
+   <p>
+   Once you have completed the sign up process, an email will be sent to the email address you 
+   provided with a validation code.  Copy the validation code and return to the ReConsider 
+   system and attempt to log in, at which point you will be directed to validate your account 
+   or click the link provided.
+   </p>
+   <p>
+   Once you have validated your account you will be able to log in to the system.
+   </p>
+   <h4 class='sub-title'><a name='ei_test'></a><span>The emotional intelligence test<?php echo $topLink; ?></span></h4>
+   <p>
+   The Emotional Intelligence (EI) will become available to take once you have completed the 
+   dispute and you have answered some question about you experience with the ODR system.
+   </p>
+   <p>
+   Access EI test by logging in to the system and navigating to the `ODR Study' page. A link 
+   will be provided on this page to the EI test. Please note the Code and Password provided 
+   here, as you will be asked to enter them in order to access the test. 
+   </p>
+   <p class='center'>
+   <i>
+   Please also note the name provided as you will be required to enter this name in as a part 
+   of the EI test.  Importantly, if you enter your own name in instead of the fake name provided 
+   you may be identifiable, and in addition will not receive your EI test results. 
+   </i>
+   </p>
+   <h4 class='sub-title'><a name='dispute_role'></a>Your role in the dispute<span><?php echo $topLink; ?></span></h4>
+   <p>
+   Once a sufficient number participants have created accounts and verified their email 
+   address you will be randomly assigned to a dispute and role.
+   </p>
+   <p>
+   This will permit you to download a pdf file containing a scenario for either a doctor 
+   or a patient, depending on the role assigned to you. Please take the time to read 
+   through the scenario.
+   </p>
+   <p class='center'>
+   <i>You may refer to the scenario during the dispute as needed. </i>
+   </p>
+   <h4 class='sub-title'><a name='dispute_engage'></a>Entering into the dispute<span><?php echo $topLink; ?></span></h4>
+   <p>
+   Once you have completed the EI test and you have been assigned a dispute, a new 
+   option will become available on the 'Disputes' page. The Disputes page can be 
+   accessed if you are logged in, by clicking on the 'ODR Study' link.
+   </p>
+   <p>
+   To enter the dispute, click in the 'enter' button in the <i>current disputes</i> section.
+   </p>
+   <h4 class='sub-title'><a name='dispute_claims'>Interacting with the dispute</a><span><?php echo $topLink; ?></span></h4>
+   <p>
+   To make or change a claim (ie to answer the questions pertaining to an issue in the 
+   dispute), click on the 'View/Change' claim buttons on the right hand side of each 
+   issue summary.  Issues are coloured according to their status: 
+   <ul>
+      <li>
+      A red/pink background indicated that the issue is in dispute and that the participants will 
+      need to answer more questions to resolve the claim.
+      </li>
+      <li>
+      A Yellow background indicates that both you and the other party are in disagreement about  
+      the claim for the issue.  Participants should  consider their position on such issues.
+      </li>
+      <li>
+      A green background indicates that both you and the other party are in agreement for the 
+      issue.
+      </li>
+      <li>
+      A light blue background indicates that you have asserted a claim for an issue, 
+      but that the other party has not yet done so.
+      </li>
+      <li>
+      A grey background indicates that no one has asserted a claim for the issue yet. 
+      </li>
+      </li>
+      <li>
+      Lastly, issues with an orange background and blue text are issues that you must 
+      review before the dispute can be resolved. Please note that you must accept your 
+      current claim or assert a new one, viewing the issues in not sufficient.
+      </li>
+   </ul>
+   </p>
+   <p>
+   During your dispute you will notice that when you view some of the issues  you will 
+   be provide with a recommendation as to which claim you should consider asserting. 
+   In such instances the system has examined some of the claims you previously asserted 
+   as well as those of the other party, in order to produced the recommendation. It is up 
+   to you to decide whether to adopt the claim.   
+   </p>
+   <h4 class='sub-title'><a name='dispute_end'></a>Ending the dispute<span><?php echo $topLink; ?></span></h4>
+   <p>
+   Once the all the claims in red and orange have been addressed the system will examine 
+   the claims and propose the how well the doctor communicated to the patient. You will 
+   be asked if the proposal is reasonable to you based on your understanding on the 
+   scenario. If you and the other party accept the proposal, then this section of the 
+   dispute is resolved (please note that this study is only focusing on a small part 
+   of the possible dispute issues).
+   </p>
+   <p>
+   If you or the other party rejects the proposal, you will both be returned to the 
+   dispute to reassert some of the claims again. Some claims will be marked to be 
+   reviewed (orange background and blue text) and will need to be examined before 
+   another proposal is suggested by the system. This process may be iterated as many 
+   times as required.
+   </p>
+   <p>
+   If you feel that after you have attempted a number of time to resolve the dispute 
+   you can not reach a resolution, you should consider the dispute unresolvable  by
+   the current means. Please exit the dispute and answer the questions
+   about the system. 
+   </p>
+   <h4 class='sub-title'><a name='dispute_finished'></a>Once the dispute is resolved<span><?php echo $topLink; ?></span></h4>
+   <p>
+   Once the dispute is resolved you will be able to examine the issues in the dispute 
+   by clicking on the button under the resolved disputes heading.  Please note, that 
+   some claims may appear different to those you asserted.  In this case, you are seeing 
+   the claim the system determined to be appropriate based on those you and the other 
+   party asserted.  If you click on the 'view' button for a question, your claim will 
+   be listed as well as the claim used by the system.
+   </p>
+   <p>
+   We would also ask that you take the time to answer a few questions about your dispute 
+   resolution experience. This can be accessed by clicking on the link provided.
+   </p>
+   </div>
+   </div>
+</div>
+
+<?php
+/*
+      <dt><a href='<?php echo $this->url(); ?>/#'></a></dt>
+   <h4 class='sub-title'><a name=''></a><span><?php echo $topLink; ?></span></h4>
+*/
+?>

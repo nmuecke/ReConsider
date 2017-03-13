@@ -1,0 +1,186 @@
+<?php $this->headTitle(': My Disputes'); ?>
+<?php $this->headLink()->appendStylesheet('/css/general.css') ?>
+
+<?php $newdispute_href =  $this->url( array( 'controller'=>'Disputes', 
+                                             'action'    => 'New' ),
+                                     'default', 
+                                      true ) ?>
+<?php $eiTest_href = "http://www.mhsassessments.com"; ?>
+<?php $doctorUrl = $this->url(array( 'controller' => 'Download',
+                                     'action'     => 'index',
+                                     "file"       => "Doctor-Scenario.pdf" )); ?>
+<?php $patientUrl = $this->url(array( 'controller' => 'Download',
+                                      'action'     => 'index',
+                                      "file"       => "Patient-Scenario.pdf" )); ?>
+<?php $surveyUrl  = $this->url(array( 'controller' => 'Survey',
+                                      'action'     => 'index',
+                                       )); ?>
+
+<div id="view-content">
+   <h2 id='title'>ODR Study</h2>
+   <div id='page-content'>
+<!-- <?php /*
+      <?php echo $this->form->setAction($this->url()); ?>
+      */ ?>
+-->
+<?php /*
+    Initiate a <a href="<?php echo $newdispute_href; ?>">new dispute</a>
+*/ ?>
+   
+   <?php if( $this->eiData != null && $this->takenSurvey == true ): ?> 
+   <h3 class='sub-title'>Emotional Intelligence Test</h3>
+   <p>
+   You may use the link below to enter the emotional intellgence (EI) test. This link will 
+   take you away from this web site and will open in a new window or tab. Once the page loads
+   you will be asked to provide an Code and password;
+   </p> 
+   <p>Your Code and password are: 
+   <p style='text-align: center;'>
+   <b> Code: </b> <?php echo $this->eiData->getEIID(); ?> <br />
+   <b> Password:</b> <?php echo $this->eiData->getPassword(); ?>
+   </p>
+   </p>
+   <p>
+   Once you have logged in, you will be asked to enter your name. <b>Please do not enter your
+   real name!</b> Instead, enter the name provided for you here:
+   <p style='text-align: center;'>
+   <b>Given Name:</b> <?php echo ucfirst(strtolower($this->user->getFirstName())); ?><br />
+   <b>Family Name:</b> <?php echo ucfirst(strtolower($this->user->getLastName())); ?>
+   </p>
+   </p>
+   <p style='text-align: center;'>
+   Go to the <a href='<?php echo $eiTest_href; ?>' target='_blank'>emotional intelligence test</a>.
+   </p>
+   <p>
+   After you have completed the EI test, the results of your EI test will be
+   interpreted and then sent to emailed address  you supplied when creating
+   your account. <b>Please note</b> that the interpretation of your results will
+   take some time and it may be several week before you receive the results. 
+   </p>
+   <p>
+   After your results are sent, your email address will  be removed from        
+   the system.
+   </p>
+   <?php endif; ?>
+   <?php if( isset( $this->resolvedDisputes ) && !empty( $this->resolvedDisputes ) && $this->takenSurvey != true ): ?>
+   <h3 class='sub-title'>Post system interaction questions</h3> 
+   <p>
+   Now that you have completed the dispute, please take the time to answer a few question
+   about your ODR experience. 
+   </p>
+   <p style='text-align: center;'>
+   Go to the  <a href='<?php echo $surveyUrl; ?>' target='_blank'>questionair</a>.
+   </p> 
+   <?php endif; ?>
+   <h3 class='sub-title'>My Dispute</h3>
+   <?php if( !isset( $this->resolvedDisputes ) || empty( $this->resolvedDisputes ) 
+          || !isset( $this->currentDisputes  ) || empty( $this->currentDisputes ) ): ?>
+
+   <p>
+    Once the allotted time has passed for participants to register, 
+    you will be paired with another person who will be your adversary in mock a dispute. 
+    Once this has occurred, you will receive a copy of a scenario which will explain your role 
+    in the dispute. An email will be sent to inform you when the dispute is ready.
+   </p> 
+   <?php endif; ?>
+   <?php if( $this->user->getRole() == DOCTOR  && $this->takenSurvey != true ): ?>
+   <p>
+   You have been assigned the role of the Doctor, please read the attched scenario before 
+   engaging in the dispute.
+   </p>
+   <p style='text-align: center;'>
+   Download the <a href='<?php echo $doctorUrl; ?>' target='_blank'>Doctor's Scenario</a>. 
+   </p>
+   <?php elseif( $this->user->getRole() == PATIENT && $this->takenSurvey != true ): ?>
+   <p>
+   You have been assigned the role of the Patient, please read the attched senario before 
+   engaeing in the dispute.
+   </p>
+   <p style='text-align: center;'>
+   Download the <a href='<?php echo $patientUrl; ?>' target='_blank'>Patient's Scenario</a>. 
+   </p>
+
+   <?php endif; ?>
+   
+   <?php if( isset( $this->currentDisputes ) && !empty( $this->currentDisputes ) ): ?>
+      <h3 class='sub-title'>Current Disputes:</h3>
+      <?php $dispute_url = $this->url( array( 'controller'=> 'dispute',
+                                              'action'    => 'index',
+                                              'module'    => 'engine' ),
+                                      'default',
+                                       true ); ?>
+      <form id      = "Dispute" 
+            action  = '<?php echo $dispute_url; ?>' 
+            method  = "post" 
+            enctype = "application/x-www-form-urlencoded"
+            >
+      <table class='disputeList'>
+      <tr>
+         <th class='id'     >ID     </th>
+         <th class='type'   >Type   </th>
+<?php /*
+         <th class='with'   >With   </th>
+         <th class='status' >Status </th>
+*/ ?>
+      </tr>
+      <?php foreach( $this->currentDisputes as $key=>$disputes ): ?>
+         <tr>
+            <td class='id'     ><?php echo $disputes['id'];     ?></td>
+            <td class='type'   ><?php echo $disputes['type'];   ?></td>
+<?php /*
+            <td class='with'   ><?php echo $disputes['with'];   ?></td>
+            <td class='status' ><?php echo $disputes['status']; ?></td>
+*/ ?>
+            <td class='status' ><button type  = 'submit' 
+                                        name  = 'disputeID'
+                                        value = '<?php echo $disputes['id']; ?>'>Enter</button></td>
+         </tr>
+      <?php endforeach; ?>
+      </table>
+      </form>
+   <?php endif; ?>
+   <?php if( isset( $this->resolvedDisputes ) && !empty( $this->resolvedDisputes ) ): ?>
+      <h3 class='sub-title'>Finished Disputes:</h3>
+      <?php $outcome_url = $this->url( array( 'controller'=> 'dispute-summary',
+                                              'action'    => 'index',
+                                              'module'    => 'engine' ),
+                                      'default',
+                                       true ) ?>
+
+      <form id      = "Dispute" 
+            action  = '<?php echo $outcome_url; ?>' 
+            method  = "post" 
+            enctype = "application/x-www-form-urlencoded"
+            >
+
+      <table class='disputeList'>
+      <tr>
+         <th class='id'     >ID      </th>
+         <th class='type'   >Type    </th>
+<?php /*
+         <th class='with'   >With    </th>
+         <th class='status' >Status  </th>
+*/ ?>
+         <th class='outcome'>Outcome </th>
+      </tr>
+      <?php foreach( $this->resolvedDisputes as $disputes ): ?>
+         <tr>
+            <td class='id'     ><?php echo $disputes['id'];      ?></td>
+            <td class='type'   ><?php echo $disputes['type'];    ?></td>
+<?php /*
+            <td class='with'   ><?php echo $disputes['with'];    ?></td>
+            <td class='status' ><?php echo $disputes['status'];  ?></td>
+            <td class='outcome'><?php echo $disputes['outcome']; ?></td>
+*/ ?>
+            <td class='status' ><button type  = 'submit' 
+                                        name  = 'disputeID'
+                                        value = '<?php echo $disputes['id']; ?>'>View</button></td>
+         </tr>
+      <?php endforeach; ?>
+      </table>
+      </form>
+
+   <?php endif; ?>
+   </div>
+</div>
+

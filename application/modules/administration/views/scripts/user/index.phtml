@@ -1,0 +1,36 @@
+<?php $this->headLink()->appendStylesheet('/css/general.css') ?>
+<?php $this->headTitle(': User Management'); ?>
+<?php $this->headLink()->appendStylesheet( '/css/admin.css' ); ?>
+<?php /*
+<?php $this->headLink()->appendStylesheet( '/javascript/fancybox/jquery.fancybox-1.3.4.css' ); ?>
+<?php $this->headScript()->appendFile( '/javascript/jquery-1.4.3.min.js' ); ?>
+<?php $this->headScript()->appendFile( '/javascript/fancybox/jquery.easing-1.4.pack.js' ); ?>
+<?php $this->headScript()->appendFile( '/javascript/fancybox/jquery.fancybox-1.3.4.pack.js' ); ?>
+*/ ?>
+<?php $roles = array( 'baned'=>'Disabled', 'user'=> 'Default user', 'admin'=>'Admin user' ); ?>
+
+<div id="view-content">
+   <h2 id='title'>User Management</h2>
+   <div id="page-content">
+   <form action='<?php echo $this->url(); ?>' name='updateAcconts' id='<?php echo $this->validationID; ?>' method='post' >
+   <table id='admin-table'>
+   <tr class='top-tr'>
+      <th>Modify</th><th>User ID</th><th>Role</th><th>Uni</th><th>Validated Email</th><th>Edit User</th>
+   </tr>
+   <?php foreach( $this->users as $user ): ?>
+   <tr class='data-tr'>
+      <td><input type="checkbox" name='userToUpdate[]' value='<?php echo $user->getId(); ?>' /> </td>
+      <td><?php echo $user->getId(); ?></td>
+      <td><?php echo $this->DropBox( $roles, $user->getRole(), "role_" . $user->getId() ); ?></td>
+      <td><?php echo $user->getRealname(); ?></td>
+      <td><?php echo ($user->getEmailIsValid()) ? 'true' : 'false'; ?></td>
+      <td><button name='edit' value='<?php echo $user->getId(); ?>'>Edit</button></td>
+   </tr>
+   <?php endforeach; ?>
+   <tr class='bottom-tr'>
+      <td></td><td></td><td><input type="submit" value="Update" /></td><td></td><td></td></td>
+   </tr>
+   </table>
+   <form>
+   </div>
+</div>

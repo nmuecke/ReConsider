@@ -1,0 +1,157 @@
+#view-content {
+   padding: 0em;
+   padding-top: .6em;
+   padding-bottom: 30px;
+
+   min-height:400px;
+   max-width: 70em;
+/*
+   min-width: 30em;
+*/
+   margin-left: 1.3em;
+   margin-right: 1.3em;
+   margin-left: auto;
+   margin-right: auto;
+   }
+
+#view-content #title {
+
+   padding-left: 0.6em;
+   font-family: sans-serif;
+   color: #074559;
+   color: #053544;
+   color: #00559B;
+
+   border-bottom: 2px solid #053544;
+   border-bottom: 2px solid #00559B;
+   }
+
+#view-content .sub-title {
+   padding-left: 0.3em;
+   font-family: sans-serif;
+   color: #074559;
+   color: #053544;
+   color: #00559B;
+
+   border-bottom: 1px solid #053544;
+   border-bottom: 1px solid #00559B;
+   }
+
+#view-content div.indent p{
+   
+   text-indent: 1em;
+   }
+
+#page-content {
+   padding-left: 1em;
+   padding-right: 1em;
+   }
+
+table.disputeList th,
+table.disputeList td{
+   margin-left: 1em;
+   padding-left: 0.65em;
+   text-align: left;
+
+   }
+table.disputeList td{
+   padding-left: 1em;
+   }
+
+table.disputeList th.id,
+table.disputeList td.id{
+   padding-left: 0px;
+   padding-right: 0px;
+   text-align: center;
+   }
+
+table.disputeList td.outcome {
+   padding-left: 1em;
+   max-width: 20%;
+   }
+
+.a-button a:visited,
+.a-button a:active,
+.a-button a,
+.a-button {
+   font-size: 0.95em;
+   text-decoration: none;
+   padding:0;
+   margin: 0;
+   margin-left: .4em;
+   margin-right: .4em;
+   padding-left: .2em;
+   padding-right: .4em;
+   underline: none;
+   background: #E0E9F5;
+   color: #000000;
+   border-top: 1px solid #FFFFFF;
+   border-left: 1px solid #FFFFFF;
+   border-bottom: 1px solid #E1E1E1;
+   border-right: 1px solid #E1E1E1;
+
+   border-radius: 5px;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+
+    box-shadow: 0px 0px 2px  #000000;
+   -webkit-box-shadow: 0px  0px 2px #000000;
+   -moz-box-shadow: 0px 0px 2px #000000;
+   }
+
+.a-button a:hover,
+.a-button:hover {
+   background: #889DB9;
+   background: #C9D5E4;
+   border-bottom: 1px solid #F1F1F1;
+   border-right: 1px solid #F1F1F1;
+   border-top: 1px solid #E1E1E1;
+   border-left: 1px solid #E1E1E1;
+    box-shadow: 0px 0px 2px #1E1E1E;
+   -webkit-box-shadow: 0px  0px 2px #1E1E1E;
+   -moz-box-shadow: 0px 0px 2px #1E1E1E;
+
+   }
+
+dl.contacts dt {
+   font-size: 1.1em;
+   padding-top: 0.6em;
+   padding-bottom: 0.2em;
+   font-weight: bold;
+   }
+
+dl.contacts dd {
+   padding-left: 0em;
+   text-indent: 0em;
+   }
+
+.center {
+   text-align: center;
+   }
+
+.msgs,
+.allert {
+   font-size: 1.05em;
+   font-style: italic;
+   text-align: center;
+  }
+
+.allert {
+  border: solid 1px #FFAE00;
+  }
+
+#page-content dl.list dt {
+   padding-top: 0.3em;
+   padding-bottom: 0.1em;
+   font-weight: bold;
+   border-bottom: solid 1px #dddddd;
+
+   }
+
+#page-content #dispute-help span {
+   float: right; 
+   font-size: .8em;
+   font-weight: normal;
+   underline: none;
+   border: none;   
+   }

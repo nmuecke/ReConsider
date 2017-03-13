@@ -1,0 +1,23 @@
+<?php $this->headTitle(': Login'); ?>
+<?php $this->headLink()->appendStylesheet('/css/general.css') ?>
+
+<?php $newuser_href =  $this->url( array('controller'=>'Auth', 'action' => 'Create-Account' ),'default', true ) ?>
+<?php $loastAccount_href =  $this->url( array('controller'=>'Auth', 'action' => 'Lost-Account' ),'default', true ) ?>
+
+
+<div id="view-content">
+   <h2 id='title'>Login</h2>
+   <div id='page-content'>
+      <p class='msgs'>
+      <?php if( isset( $this->msgs ) ) foreach( $this->msgs as $msg ) echo $msg; ?>
+      </p>
+      <p>
+      New user? create an account <a href="<?php echo $newuser_href; ?>">here</a>.
+      <?php echo $this->form->setAction($this->url()); ?>
+      <a href='<?php echo $loastAccount_href; ?>'>Forgotten Your Password?</a>
+
+      </p>
+   </div>
+</div>
+
+

@@ -1,0 +1,21 @@
+<?php $this->headTitle(': Exit Survey'); ?>
+<?php $this->headLink()->appendStylesheet('/css/general.css') ?>
+<?php $this->headLink()->appendStylesheet('/css/survey.css') ?>
+
+
+
+<div id="view-content">
+   <div id='page-content'>
+   <h2 id='title'>Exit Survey</h2>
+   <div id='survey' >
+   <?php      
+   $this->form->setAction($this->url());
+   echo $this->form;
+   ?>
+   </div>
+ 
+
+   </div>
+</div>
+
+

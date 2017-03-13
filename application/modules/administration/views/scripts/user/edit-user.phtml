@@ -1,0 +1,21 @@
+<?php $this->headLink()->appendStylesheet('/css/general.css') ?>
+<?php $this->headTitle(': Change Name'); ?>
+<?php $this->headLink()->appendStylesheet( '/css/admin.css' ); ?>
+<?php /*
+<?php $this->headLink()->appendStylesheet( '/javascript/fancybox/jquery.fancybox-1.3.4.css' ); ?>
+<?php $this->headScript()->appendFile( '/javascript/jquery-1.4.3.min.js' ); ?>
+<?php $this->headScript()->appendFile( '/javascript/fancybox/jquery.easing-1.4.pack.js' ); ?>
+<?php $this->headScript()->appendFile( '/javascript/fancybox/jquery.fancybox-1.3.4.pack.js' ); ?>
+*/ ?>
+
+<div id="view-content">
+   <h2 id='title'>Change User Name For: <?php echo $this->name; ?> </h2>
+   <div id="page-content">
+   <p class='center'>
+   </p>
+   <?php echo $this->form->setAction($this->url(array( 'action'     => 'edit-user', 
+                                                       'controller' => 'user',
+                                                       'module'     => 'administration'
+                                                      ))); ?>
+   </div>
+</div>

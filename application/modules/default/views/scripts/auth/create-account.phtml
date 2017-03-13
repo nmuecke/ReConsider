@@ -1,0 +1,14 @@
+<?php $this->headLink()->appendStylesheet('/css/general.css'); ?>
+<?php $this->headTitle( ": Create Account" ); ?>
+
+<div id="view-content">
+   <h2 id='title'>Create Account</h2>
+   <div id='page-content'>
+      <p class='msgs'>
+      <?php if( isset( $this->msgs ) ) foreach( $this->msgs as $msg ) echo $msg; ?>
+      </p>
+
+      <?php $this->form->setAction($this->url());?>
+      <?php echo $this->form; ?>
+   </div>
+</div>

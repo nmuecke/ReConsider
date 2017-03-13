@@ -1,0 +1,20 @@
+<?php $this->headTitle(': Request Denied'); ?>
+<?php $this->headLink()->appendStylesheet('/css/general.css'); ?>
+
+<?php $login_href   = $this->url( array('controller'=>'auth', 'action'=>'index', 'module'=>'default' ) ); ?>
+<?php $dispute_href = $this->url( array('controller'=>'disputes', 'action'=>'index', 'module'=>'default' ) ); ?>
+
+<div id="view-content">
+   <h2 id='title'>Request Denied</h2>
+   <div id='page-content'>
+   The page you requested can only be accessed if referred to from an approved page.
+   <h4>How did I end up here?</h4>
+   You will see this page if you have tried to access the dispute incorrectly. This may be as simple as
+   using the web browser's back button or trying to access a page without going through the dispute
+   management page. Other pages also require that they are directed from a particular page.
+   <h4>What to do now?</h4>
+   Make sure that you have <a href='<?php echo $login_href; ?>'>logged in</a> to you account then access
+   the dispute through the dispute management <a href='<?php echo $dispute_href; ?>'>page</a>. 
+   </div>
+</div>
+

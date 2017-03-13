@@ -1,0 +1,55 @@
+<?php $this->headLink()->appendStylesheet('/css/general.css') ?>
+<?php $this->headTitle(': Home'); ?>
+
+<div id="view-content">
+   <h2 id='title'>Administration Options</h2>
+   <div id="page-content">
+      <dl>
+         <dt>
+         <a href="<?php echo $this->url( array('module'     => 'administration',
+                                               'controller' => 'user', 
+                                               'action'     => 'index'          ),
+                                        'default',
+                                         true ) ?>">User options</a>.</dt>
+
+         <dt>
+         <a href="<?php echo $this->url( array('module'     => 'administration',
+                                               'controller' => 'dispute', 
+                                               'action'     => 'index'          ),
+                                               'default',
+                                                true ) ?>">Dispute Options</a></dt>
+        
+            <dd>
+            <a href="<?php echo $this->url( array('module'     => 'administration',
+                                                  'controller' => 'dispute',
+                                                  'action'     => 'ei'             ),
+                                           'default',
+                                            true ) ?>">EI Test options</a>.</dd>
+         <dt>
+         <a href="<?php echo $this->url( array('module'     => 'administration',
+                                               'controller' => 'contact-user',
+                                               'action'     => 'index'          ),
+                                        'default',
+                                         true ) ?>">Contact User</a>.</dt>
+         <dt>
+         <a href="<?php echo $this->url( array('module'     => 'administration',
+                                               'controller' => 'data',
+                                               'action'     => 'index'          ),
+                                        'default',
+                                         true ) ?>">Study Data</a>.</dt>
+            <dd>
+            <a href="<?php echo $this->url( array('module'     => 'administration',
+                                                  'controller' => 'data',
+                                                  'action'     => 'survey-results'             ),
+                                           'default',
+                                            true ) ?>">Survey Results</a>.</dd>
+            <dd>
+            <a href="<?php echo $this->url( array('module'     => 'administration',
+                                                  'controller' => 'data',
+                                                  'action'     => 'dispute-data'             ),
+                                           'default',
+                                            true ) ?>">Dispute Data</a>.</dd>
+
+      </dl>
+   </div>
+</div>

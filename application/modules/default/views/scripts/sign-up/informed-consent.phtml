@@ -1,0 +1,56 @@
+
+<?php $this->headLink()->appendStylesheet('/css/general.css'); ?>
+<?php $this->headLink()->appendStylesheet('/css/forms.css'); ?>
+<?php $this->headTitle( ": Informed Concent" ); ?>
+
+
+<?php $icfUrl = $this->url(array( 'controller' => 'Download',
+                                  'action'     => 'index',
+                                  "file"       => "plsc1-EB.pdf" )); ?>
+<?php $plsUrl = $icfUrl; ?>
+
+<div id="view-content">
+   <div id="TermsOfUse-dialog">
+      <div id='page-content'>
+         <h2 id='title'>PLAIN LANGUAGE STATEMENT AND CONSENT FORM</h2>
+         <h3>TO:  Deakin and University of Ballarat Students</h3>   
+         <div class='center'><h3>Consent Form</h3></div>
+         <p>          
+         <b>Date: 22nd June 2011</b>
+         </p>
+         <p>
+         <h3>Full Project Title: Assessing the suitability of a new Online Dispute Resolution 
+         architecture for the settlement of Electronic Health Record disputes; an emotional 
+         intelligence and organisational security approach.</h3>
+         <h3>Reference Number: BL-EC 41-11</h3>
+         <p>
+         I have read  and I understand the attached Plain Language Statement.
+         </p>
+         <p>
+         I freely agree to participate in this project according to the conditions in the Plain
+         Language Statement. 
+         </p>
+         <p>
+         I have been given a copy of the <a href="<?php echo $plsUrl; ?>">Plain Language Statement</a> 
+         and <a href="<?php echo $icfUrl; ?>">Consent Form</a> to keep (Both can be downloaded 
+         <a href="<?php echo $plsUrl; ?>">here</a>).
+         
+         </p>
+         The researcher has agreed not to reveal my identity and personal details, including where 
+         information about this project is published, or presented in any public form.  
+         </p> 
+         
+
+         <div class='center'> 
+         <?php if( isset($this->form ) )
+                  {
+                  $this->form->setLabelMessage( "I hereby state that I have read and agree to the terms detailed above." );
+                  $this->form->setButtonMessage( "I Consent" );
+                  $this->form->setAction($this->url());
+                  echo $this->form;
+                  }
+              ?>
+         </div> 
+      </div>
+   </div>
+</div>
